@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/webzon/app/src/main/res/drawable-xxhdpi/bottomdilogbox.xml" value="0.28" />
         <entry key="..\:/webzon/app/src/main/res/drawable/bottomdilog.xml" value="0.284375" />
         <entry key="..\:/webzon/app/src/main/res/drawable/bottomdilog1.xml" value="0.284375" />
         <entry key="..\:/webzon/app/src/main/res/layout/activity_add_product.xml" value="0.1933876811594203" />
-        <entry key="..\:/webzon/app/src/main/res/layout/bottom_items.xml" value="0.1933876811594203" />
+        <entry key="..\:/webzon/app/src/main/res/layout/bottom_items.xml" value="0.25" />
         <entry key="..\:/webzon/app/src/main/res/layout/button_custom.xml" value="0.1933876811594203" />
         <entry key="..\:/webzon/app/src/main/res/layout/card_design_bottom_sheet.xml" value="0.1933876811594203" />
         <entry key="..\:/webzon/app/src/main/res/layout/catalogitenlist_row.xml" value="0.1933876811594203" />
