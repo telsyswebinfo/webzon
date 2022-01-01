@@ -100,7 +100,7 @@ public class HomeActivity2  extends CustomActivity {
 
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
         //bottomdilog();
-        bottomdilogbox();
+       // bottomdilogbox();
     }
 
     @SuppressLint("WrongConstant")
@@ -148,19 +148,19 @@ public class HomeActivity2  extends CustomActivity {
     }
 
     private void bottomdilogbox() {
-        Button btn_continue;
+     //   Button btn_continue;
         View view = getLayoutInflater().inflate(R.layout.bottom_items, null);
         BottomSheetDialog dialog = new BottomSheetDialog(this,R.style.BottomSheetDialog); // Style here
         dialog.setContentView(view);
         dialog.setCancelable(false);
         dialog.show();
-        btn_continue =findViewById(R.id.btn_continue);
+       /* btn_continue =findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.cancel();
             }
-        });
+        });*/
 
     }
 }
