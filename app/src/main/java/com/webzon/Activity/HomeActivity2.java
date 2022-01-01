@@ -98,7 +98,8 @@ public class HomeActivity2  extends CustomActivity {
         });
 
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
-        bottomdilog();
+        //bottomdilog();
+        bottomdilogbox();
     }
 
     @SuppressLint("WrongConstant")
@@ -143,5 +144,15 @@ public class HomeActivity2  extends CustomActivity {
                 dialog.cancel();
             }
         });
+    }
+
+    private void bottomdilogbox() {
+
+        View view = getLayoutInflater().inflate(R.layout.bottom_items, null);
+        BottomSheetDialog dialog = new BottomSheetDialog(this,R.style.BottomSheetDialog); // Style here
+        dialog.setContentView(view);
+        dialog.setCancelable(false);
+        dialog.show();
+
     }
 }
