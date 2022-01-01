@@ -15,7 +15,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 import com.webzon.utils.VideoConfig;
 
-import webzon.R;
+import com.webzon.R;
 
 public class FullScreenLessonPlayerActivity extends YouTubeBaseActivity {
     YouTubePlayerView myouTubePlayerView;

@@ -20,7 +20,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.webzon.Activity.Login.EnterWhatupNoActivity;
 import com.webzon.utils.SessionManager;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class Intro extends AppCompatActivity {

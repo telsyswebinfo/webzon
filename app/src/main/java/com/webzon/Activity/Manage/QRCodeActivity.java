@@ -39,7 +39,7 @@ import androidmads.library.qrgenearator.QRGContents;
 import androidmads.library.qrgenearator.QRGEncoder;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 //https://medium.com/agora-io/agora-cloud-recording-quickstart-guide-with-postman-demo-c4a6b824e708
 public class QRCodeActivity extends AppCompatActivity {
     @BindView(R.id.img_qrcode) ImageView img_qrcode;

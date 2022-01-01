@@ -38,7 +38,7 @@ import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class ExtraChargesActivity extends CustomActivity {
 

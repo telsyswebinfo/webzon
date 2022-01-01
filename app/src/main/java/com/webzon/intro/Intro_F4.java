@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
 import com.webzon.Activity.Login.EnterWhatupNoActivity;
-import webzon.R;
+import com.webzon.R;
 
 
 public class Intro_F4 extends Fragment {

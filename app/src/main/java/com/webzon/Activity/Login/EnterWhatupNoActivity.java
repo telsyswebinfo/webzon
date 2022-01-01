@@ -69,7 +69,7 @@ import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 
 public class EnterWhatupNoActivity extends CustomActivity implements SearchView.OnQueryTextListener, SearchView.OnCloseListener {

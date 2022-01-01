@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class MultipleImageAdapter extends RecyclerView.Adapter<MultipleImageAdapter.MyViewHolder> {
     ArrayList<Uri> mArrayUri;

@@ -15,7 +15,7 @@ import com.webzon.Model.OrderDetailsModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class OrderDetailsAdapter extends RecyclerView.Adapter<OrderDetailsAdapter.MyViewHolder> {
     private ArrayList<OrderDetailsModel> data;

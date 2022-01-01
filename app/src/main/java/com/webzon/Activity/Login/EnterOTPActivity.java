@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class EnterOTPActivity extends CustomActivity {
     @BindView(R.id.btn_submit) Button btn_submit;

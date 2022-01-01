@@ -5,7 +5,7 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import webzon.R;
+import com.webzon.R;
 
 public class SubHomeActivity extends CustomActivity{
     BottomNavigationView bottomNavigationView;

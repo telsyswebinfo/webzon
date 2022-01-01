@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class MarketingsActivity extends CustomActivity {
     @BindView(R.id.rev_card) RecyclerView rev_card;

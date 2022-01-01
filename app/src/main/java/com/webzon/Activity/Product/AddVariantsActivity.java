@@ -41,7 +41,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import webzon.R;
+import com.webzon.R;
 
 public class AddVariantsActivity extends AppCompatActivity implements View.OnClickListener  {
     LinearLayout layoutList;

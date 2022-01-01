@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class DiscountCouponsActivity extends CustomActivity {
     @BindView(R.id.btn_create_coupons) Button btn_create_coupons;

@@ -18,8 +18,7 @@ import com.webzon.utils.SessionManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import webzon.R;
+import com.webzon.R;
 
 public class DilogActivity extends Activity {
     SessionManager sessionManager = new SessionManager();

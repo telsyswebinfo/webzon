@@ -14,8 +14,7 @@ import com.webzon.Activity.Product.CatalogCategoryActivity;
 import com.webzon.Model.CatLogListModel;
 
 import java.util.ArrayList;
-
-import webzon.R;
+import com.webzon.R;
 
 public class CatalogListAdapter extends RecyclerView.Adapter<CatalogListAdapter.MyViewHolder> {
     private ArrayList<CatLogListModel> data;

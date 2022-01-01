@@ -15,7 +15,7 @@ import com.webzon.Model.CategoryModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyViewHolder> {
     private ArrayList<CategoryModel> data;

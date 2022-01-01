@@ -6,10 +6,10 @@ import android.os.Handler;
 
 import com.webzon.Activity.CustomActivity;
 import com.webzon.Activity.HomeActivity2;
+import com.webzon.R;
 import com.webzon.halper.StaticVariables;
 import com.webzon.utils.SessionManager;
 
-import webzon.R;
 
 public class CongratulationActivity extends CustomActivity {
     SessionManager sessionManager = new SessionManager();

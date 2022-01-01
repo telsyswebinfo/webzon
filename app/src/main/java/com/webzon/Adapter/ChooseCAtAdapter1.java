@@ -15,7 +15,7 @@ import com.webzon.Model.categoryShopListModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class ChooseCAtAdapter1 extends RecyclerView.Adapter<ChooseCAtAdapter1.MyViewHolder> {
     private ArrayList<categoryShopListModel.Data.Datum> data;

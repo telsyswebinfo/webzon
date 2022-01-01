@@ -33,7 +33,7 @@ import com.webzon.utils.SessionManager;
 import java.util.Map;
 import java.util.Random;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {

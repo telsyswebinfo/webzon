@@ -14,7 +14,7 @@ import com.webzon.utils.SessionManager;
 import java.util.concurrent.TimeUnit;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class WhatupNumberActivity extends CustomActivity {
     @BindView(R.id.btn_get_otp) Button btn_get_otp;

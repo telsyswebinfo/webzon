@@ -40,7 +40,7 @@ import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 
 public class CreateCouponsActivity extends CustomActivity {

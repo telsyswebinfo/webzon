@@ -42,7 +42,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import webzon.R;
+import com.webzon.R;
 
 public class OrderProduct2Adapter extends RecyclerView.Adapter<OrderProduct2Adapter.MyViewHolder> {
     private ArrayList<ProductList> data;

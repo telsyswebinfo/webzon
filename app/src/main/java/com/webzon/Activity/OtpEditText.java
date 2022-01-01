@@ -9,7 +9,7 @@ import android.view.ActionMode;
 import android.view.View;
 import androidx.appcompat.widget.AppCompatEditText;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class OtpEditText extends AppCompatEditText {

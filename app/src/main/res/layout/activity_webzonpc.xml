@@ -29,13 +29,23 @@
             android:background="@drawable/ic_arrow_back_black_24dp"/>
 
         <TextView
+            android:id="@+id/introducing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/back_arrow"
             android:gravity="center"
-            android:text="All the features to start your online \nbusiness"
+            android:text="introducing"
             android:textColor="@android:color/white"
-            android:textSize="15sp"
+            android:textSize="13sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/back_arrow"
+            android:gravity="center"
+            android:layout_below="@id/introducing"
+            android:text="Webzon for PC"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
             android:textStyle="bold" />
     </RelativeLayout>
      </LinearLayout>
@@ -51,15 +61,58 @@
               <LinearLayout
                   android:layout_width="match_parent"
                   android:background="@color/purple_200"
-                  android:layout_height="@dimen/_100sdp"/>
+                  android:layout_height="@dimen/_90sdp"/>
                <LinearLayout
                    android:layout_width="match_parent"
-                   android:layout_height="@dimen/_100sdp"/>
+                   android:layout_height="@dimen/_80sdp"/>
            </LinearLayout>
-           <ImageView
-               android:layout_width="@dimen/_250sdp"
-               android:layout_height="@dimen/_150sdp"
-               android:background="@drawable/pc_img"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center">
+               <ImageView
+                   android:layout_width="@dimen/_250sdp"
+                   android:layout_height="@dimen/_150sdp"
+                   android:background="@drawable/pc_img"/>
+           </LinearLayout>
+
+       </RelativeLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="start"
+           android:layout_below="@id/introducing"
+           android:text="With Webzon for PC,you can"
+           android:paddingLeft="@dimen/_20sdp"
+           android:textColor="@android:color/black"
+           android:textSize="15sp"
+           android:textStyle="bold"/>
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rec_pc"
+           android:layout_width="match_parent"
+           android:layout_height="300dp"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:gravity="bottom|center"
+               android:layout_width="match_parent"
+               android:layout_marginLeft="@dimen/_10sdp"
+               android:layout_marginRight="@dimen/_10sdp"
+               android:layout_alignParentBottom="true"
+               android:layout_height="wrap_content">
+
+               <Button
+                   android:id="@+id/btn_continue"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:textSize="16dp"
+                   android:textAllCaps="false"
+                   android:text="Visit Webzon for PC"
+                   android:background="@drawable/btn_bg_visit_s"/>
+
+           </LinearLayout>
        </RelativeLayout>
    </LinearLayout>
   </LinearLayout>

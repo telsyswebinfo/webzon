@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class Intro_F2 extends Fragment {

@@ -14,7 +14,7 @@ import com.flyco.tablayout.SegmentTabLayout;
 import com.flyco.tablayout.listener.OnTabSelectListener;
 import com.webzon.utils.ViewFindUtils;
 
-import webzon.R;
+import com.webzon.R;
 
 public class ProductsFragment extends Fragment {
     View view;

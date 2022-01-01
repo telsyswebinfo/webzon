@@ -76,7 +76,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Response;
-import webzon.R;
+import com.webzon.R;
 
 public class EditProductActivity extends AppCompatActivity {
     @BindView(R.id.txt_addVaiants)

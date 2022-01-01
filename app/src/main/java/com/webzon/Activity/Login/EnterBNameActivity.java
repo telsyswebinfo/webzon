@@ -26,6 +26,7 @@ import com.webzon.Map.MapUtility;
 import com.webzon.Model.CategoryModel;
 import com.webzon.Model.GetCategoryModel;
 import com.webzon.Model.categoryListModel;
+import com.webzon.R;
 import com.webzon.halper.StaticVariables;
 import com.webzon.utils.RecyclerItemClickListener;
 import com.webzon.utils.SessionManager;
@@ -40,7 +41,7 @@ import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+
 
 public class EnterBNameActivity extends CustomActivity {
     @BindView(R.id.li_category) LinearLayout li_category;

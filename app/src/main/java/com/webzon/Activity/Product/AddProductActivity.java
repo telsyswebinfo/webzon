@@ -27,7 +27,7 @@ import org.json.JSONObject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class AddProductActivity extends CustomActivity {
     @BindView(R.id.btn_continue) Button btn_continue;

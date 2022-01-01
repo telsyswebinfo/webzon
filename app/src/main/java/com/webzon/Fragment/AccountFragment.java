@@ -24,6 +24,7 @@ import com.bumptech.glide.Glide;
 import com.webzon.Activity.Account.AdditionalInformationActivity;
 import com.webzon.Activity.DilogActivity;
 import com.webzon.Activity.Account.EditBusinessActivity;
+import com.webzon.Activity.WebzonpcActivity;
 import com.webzon.Yplayer.TutorialsActivity;
 import com.webzon.halper.StaticVariables;
 import com.webzon.utils.ApiUrl;
@@ -38,7 +39,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import webzon.R;
+import com.webzon.R;
 
 public class AccountFragment extends Fragment {
     View view;
@@ -131,6 +132,7 @@ public class AccountFragment extends Fragment {
         li_webzon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(getActivity(), WebzonpcActivity.class));
                 //Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://webzon.in/"));
                // startActivity(viewIntent);
             }

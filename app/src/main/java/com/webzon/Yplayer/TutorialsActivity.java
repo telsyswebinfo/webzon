@@ -47,7 +47,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-import webzon.R;
+import com.webzon.R;
 
 public class TutorialsActivity extends YouTubeBaseActivity {
   //  YouTubePlayerView youtubePlayer;

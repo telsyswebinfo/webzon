@@ -34,7 +34,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
-import webzon.R;
+import com.webzon.R;
 
 public class OrderFragment extends Fragment{
     View view;

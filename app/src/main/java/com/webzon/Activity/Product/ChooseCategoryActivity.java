@@ -11,7 +11,7 @@ import com.webzon.Activity.SubCategoryActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class ChooseCategoryActivity extends CustomActivity {
     @BindView(R.id.card_grocery) CardView card_grocery;

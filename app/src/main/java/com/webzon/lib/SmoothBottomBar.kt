@@ -24,7 +24,7 @@ import androidx.core.graphics.drawable.DrawableCompat
 import androidx.core.view.ViewCompat
 import androidx.navigation.NavController
 import me.ibrahimsn.lib.ext.d2p
-import webzon.R
+import com.webzon.R;
 import kotlin.math.roundToInt
 
 class SmoothBottomBar @JvmOverloads constructor(

@@ -22,6 +22,7 @@ import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.webzon.Activity.CustomActivity;
 import com.webzon.Activity.Login.EnterWhatupNoActivity;
+import com.webzon.R;
 import com.webzon.halper.StaticVariables;
 import com.webzon.utils.ApiUrl;
 import com.webzon.utils.SessionManager;
@@ -37,7 +38,6 @@ import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
 
 public class AdditionalInformationActivity extends CustomActivity {
 

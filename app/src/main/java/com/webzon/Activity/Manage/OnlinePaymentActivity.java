@@ -9,7 +9,7 @@ import android.widget.RadioGroup;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class OnlinePaymentActivity extends AppCompatActivity {
     @BindView(R.id.li_bank) LinearLayout li_bank;

@@ -35,8 +35,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import com.webzon.R;
 
-import webzon.R;
 
 public class P_CategoryFragment extends Fragment {
     View view;

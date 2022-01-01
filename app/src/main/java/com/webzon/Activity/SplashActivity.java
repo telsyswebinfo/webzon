@@ -21,7 +21,7 @@ import com.webzon.halper.StaticVariables;
 import com.webzon.intro.Intro;
 import com.webzon.utils.SessionManager;
 
-import webzon.R;
+import com.webzon.R;
 
 public class SplashActivity extends CustomActivity {
     SessionManager sessionManager = new SessionManager();

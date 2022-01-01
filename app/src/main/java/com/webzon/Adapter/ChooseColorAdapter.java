@@ -15,7 +15,7 @@ import com.webzon.Model.colorListModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class ChooseColorAdapter extends RecyclerView.Adapter<ChooseColorAdapter.MyViewHolder> {
     private ArrayList<colorListModel> data;

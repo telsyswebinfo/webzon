@@ -57,7 +57,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 
 public class BusinesCardActivity extends CustomActivity {

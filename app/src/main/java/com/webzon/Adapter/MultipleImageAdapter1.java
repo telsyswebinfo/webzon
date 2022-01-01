@@ -30,7 +30,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class MultipleImageAdapter1 extends RecyclerView.Adapter<MultipleImageAdapter1.MyViewHolder> {
     ArrayList<Uri> mArrayUri;
