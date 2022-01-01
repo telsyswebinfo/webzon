@@ -11,7 +11,7 @@ import android.view.Gravity
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
-import webzon.R
+import com.webzon.R;
 import java.util.*
 import java.util.regex.Pattern
 

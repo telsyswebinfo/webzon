@@ -7,11 +7,12 @@ import android.widget.Button;
 
 
 import com.webzon.Activity.CustomActivity;
+import com.webzon.BuildConfig;
+import com.webzon.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.BuildConfig;
-import webzon.R;
+
 
 public class ShareAppActivity extends CustomActivity {
     @BindView(R.id.btn_share) Button btn_share;

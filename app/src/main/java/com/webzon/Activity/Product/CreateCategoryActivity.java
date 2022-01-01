@@ -50,7 +50,7 @@ import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import webzon.R;
+import com.webzon.R;
 
 public class CreateCategoryActivity extends AppCompatActivity {
     SessionManager sessionManager = new SessionManager();

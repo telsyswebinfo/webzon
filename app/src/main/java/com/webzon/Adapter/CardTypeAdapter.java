@@ -16,7 +16,7 @@ import com.webzon.Model.PromotionalListModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class CardTypeAdapter extends RecyclerView.Adapter<CardTypeAdapter.MyViewHolder> {
 

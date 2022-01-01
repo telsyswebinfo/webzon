@@ -21,7 +21,7 @@ import com.webzon.Yplayer.TutorialsActivity;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class TutoricalCategoryAdapter extends RecyclerView.Adapter<TutoricalCategoryAdapter.MyViewHolder> {
     private ArrayList<ModelCategory> data;

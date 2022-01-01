@@ -3,7 +3,7 @@ package com.webzon.otptextview
 import android.content.Context
 import android.text.InputType
 import android.util.AttributeSet
-import webzon.R
+import com.webzon.R;
 
 internal class OTPChildEditText : androidx.appcompat.widget.AppCompatEditText {
 

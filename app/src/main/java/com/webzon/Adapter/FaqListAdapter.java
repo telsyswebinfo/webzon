@@ -21,7 +21,7 @@ import com.webzon.Yplayer.TutorialsActivity;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class FaqListAdapter extends RecyclerView.Adapter<FaqListAdapter.MyViewHolder> {
     private ArrayList<ModelFaq> data;

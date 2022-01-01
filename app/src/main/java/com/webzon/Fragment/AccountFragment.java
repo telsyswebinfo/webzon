@@ -38,7 +38,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import webzon.R;
+import com.webzon.R;
 
 public class AccountFragment extends Fragment {
     View view;

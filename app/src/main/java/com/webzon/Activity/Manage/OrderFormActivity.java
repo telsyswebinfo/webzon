@@ -15,7 +15,7 @@ import com.webzon.utils.ApiUrl;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class OrderFormActivity extends AppCompatActivity {
     @BindView(R.id.img_work) ImageView img_work;

@@ -14,8 +14,7 @@ import com.webzon.utils.productListModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
-
+import com.webzon.R;
 public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.MyViewHolder> {
     private ArrayList<productListModel.Category> data;
     Context context;

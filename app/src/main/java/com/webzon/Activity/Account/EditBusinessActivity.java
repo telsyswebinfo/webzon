@@ -31,6 +31,7 @@ import com.webzon.Map.LocationPickerActivity;
 import com.webzon.Map.MapUtility;
 import com.webzon.Model.categoryShopListModel;
 import com.webzon.Model.unitListModel;
+import com.webzon.R;
 import com.webzon.halper.StaticVariables;
 import com.webzon.utils.ApiUrl;
 import com.webzon.utils.SessionManager;
@@ -58,7 +59,7 @@ import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import webzon.R;
+
 
 public class EditBusinessActivity extends CustomActivity {
     @BindView(R.id.li_img) LinearLayout li_img;

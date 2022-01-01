@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class PendingOrderActivity extends CustomActivity {
     @BindView(R.id.li_acc) LinearLayout li_acc;

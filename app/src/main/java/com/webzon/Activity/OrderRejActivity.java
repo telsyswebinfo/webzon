@@ -2,7 +2,7 @@ package com.webzon.Activity;
 
 import android.os.Bundle;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class OrderRejActivity extends CustomActivity {

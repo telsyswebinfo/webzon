@@ -17,7 +17,7 @@ import com.webzon.Model.homePageDataModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.MyViewHolder> {
     private ArrayList<BannerModel> data;

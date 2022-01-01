@@ -70,7 +70,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import webzon.R;
+import com.webzon.R;
 
 public class LocationPickerActivity extends AppCompatActivity implements OnMapReadyCallback {
     private static final int REQUEST_CHECK_SETTINGS = 2;

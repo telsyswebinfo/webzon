@@ -38,7 +38,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class CategoryWiseProductActivity extends CustomActivity {
     @BindView(R.id.txt_price) TextView txt_price;

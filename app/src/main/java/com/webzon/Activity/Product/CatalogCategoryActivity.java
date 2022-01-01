@@ -31,7 +31,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class CatalogCategoryActivity extends CustomActivity {
     SessionManager sessionManager = new SessionManager();

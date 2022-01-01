@@ -12,7 +12,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class DisCovActivity extends CustomActivity {
 

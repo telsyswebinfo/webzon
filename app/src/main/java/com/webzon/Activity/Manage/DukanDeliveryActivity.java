@@ -8,7 +8,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.webzon.Activity.CustomActivity;
 
 import butterknife.BindView;
-import webzon.R;
+import com.webzon.R;
 
 public class DukanDeliveryActivity extends CustomActivity {
 

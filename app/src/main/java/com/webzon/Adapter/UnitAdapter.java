@@ -14,7 +14,7 @@ import com.webzon.Model.unitListModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class UnitAdapter extends RecyclerView.Adapter<UnitAdapter.MyViewHolder> {
     private ArrayList<unitListModel.Data.Datum> data;

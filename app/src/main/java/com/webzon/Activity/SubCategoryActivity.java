@@ -9,7 +9,7 @@ import com.webzon.halper.StaticVariables;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class SubCategoryActivity extends CustomActivity {
     @BindView(R.id.btn_category) Button btn_category;

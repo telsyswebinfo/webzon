@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
-import webzon.R;
+import com.webzon.R;
 public class DemoActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, SearchView.OnCloseListener {
    // AutoDetectOTP autoDetectOTP;
    // TextView textView;

@@ -41,7 +41,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import webzon.R;
+import com.webzon.R;
 
 public class CoupanListAdapter extends RecyclerView.Adapter<CoupanListAdapter.MyViewHolder> {
     private ArrayList<CoupanListModel> data;

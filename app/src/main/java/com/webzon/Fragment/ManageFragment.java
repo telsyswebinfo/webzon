@@ -19,7 +19,7 @@ import com.webzon.Activity.Manage.OnlinePaymentActivity;
 import com.webzon.Activity.Manage.OrderFormActivity;
 import com.webzon.Activity.Manage.QRCodeActivity;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class ManageFragment extends Fragment {

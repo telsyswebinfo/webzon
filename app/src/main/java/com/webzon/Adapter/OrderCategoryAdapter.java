@@ -41,7 +41,7 @@ import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class OrderCategoryAdapter extends RecyclerView.Adapter<OrderCategoryAdapter.MyViewHolder> {
     private ArrayList<ProductCategoryModel> data;

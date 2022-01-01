@@ -15,7 +15,7 @@ import com.webzon.utils.Item;
 
 import java.util.List;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class MyFancyCoverFlowAdapter extends FancyCoverFlowAdapter {

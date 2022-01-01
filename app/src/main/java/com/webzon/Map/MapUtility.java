@@ -11,8 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
-
-import webzon.R;
+import com.webzon.R;
 
 
 public class MapUtility {

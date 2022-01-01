@@ -32,7 +32,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class ImageUtils {

@@ -49,7 +49,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class BaseActivity extends AppCompatActivity implements View.OnClickListener {

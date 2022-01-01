@@ -4,7 +4,7 @@ import android.app.Activity;
 
 import com.andrognito.flashbar.Flashbar;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class SnackBar {

@@ -26,7 +26,7 @@ import com.webzon.utils.Layout_to_Image;
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class BusinesCardAdapter extends RecyclerView.Adapter<BusinesCardAdapter.MyViewHolder> {
     Layout_to_Image layout_to_image;

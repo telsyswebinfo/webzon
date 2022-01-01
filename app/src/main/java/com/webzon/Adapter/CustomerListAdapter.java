@@ -14,7 +14,7 @@ import com.webzon.Model.CustomerListModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapter.MyViewHolder> {
     private ArrayList<CustomerListModel> data;

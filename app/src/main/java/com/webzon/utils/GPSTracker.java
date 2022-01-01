@@ -19,7 +19,7 @@ import android.os.IBinder;
 import android.provider.Settings;
 import android.util.Log;
 
-import webzon.R;
+import com.webzon.R;
 
 
 /**

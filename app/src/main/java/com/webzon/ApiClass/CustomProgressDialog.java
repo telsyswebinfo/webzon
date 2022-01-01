@@ -10,7 +10,7 @@ import android.view.Window;
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class CustomProgressDialog {

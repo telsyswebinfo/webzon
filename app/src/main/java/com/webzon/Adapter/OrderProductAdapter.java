@@ -35,7 +35,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class OrderProductAdapter extends RecyclerView.Adapter<OrderProductAdapter.MyViewHolder> {
     private ArrayList<productListModel.Product.Datum> data;

@@ -21,7 +21,7 @@ import android.widget.Toast;
 import com.webzon.halper.StaticVariables;
 import com.webzon.utils.ApiUrl;
 
-import webzon.R;
+import com.webzon.R;
 
 public class WebViewActivity extends CustomActivity {
     private WebView webview ;

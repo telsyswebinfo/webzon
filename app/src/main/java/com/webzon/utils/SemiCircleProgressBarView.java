@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.View;
 
-import webzon.R;
+import com.webzon.R;
 
 public class SemiCircleProgressBarView extends View {
 

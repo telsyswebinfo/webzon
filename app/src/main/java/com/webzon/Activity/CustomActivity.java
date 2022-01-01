@@ -14,7 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import java.util.regex.Pattern;
 
-import webzon.R;
+import com.webzon.R;
 
 
 public class CustomActivity extends AppCompatActivity {

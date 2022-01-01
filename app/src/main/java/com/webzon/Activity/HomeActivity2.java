@@ -40,7 +40,7 @@ import org.json.JSONObject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class HomeActivity2  extends CustomActivity {
     @BindView(R.id.viewPager) ViewPager viewPager;

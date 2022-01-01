@@ -61,7 +61,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 
-import webzon.R;
+import com.webzon.R;
 
 public class HomeFragment extends Fragment {
     View view;

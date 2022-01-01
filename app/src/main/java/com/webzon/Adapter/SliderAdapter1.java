@@ -14,7 +14,7 @@ import com.webzon.Model.GetSliderModel;
 
 import java.util.ArrayList;
 
-import webzon.R;
+import com.webzon.R;
 
 public class SliderAdapter1 extends RecyclerView.Adapter<SliderAdapter1.MyViewHolder> {
     private ArrayList<GetSliderModel.Data> data;

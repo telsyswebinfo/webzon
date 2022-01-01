@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.webkit.WebView;
 
 import com.webzon.Activity.CustomActivity;
+import com.webzon.R;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
 
 public class PrivacyPolicyActivity extends CustomActivity {
     @BindView(R.id.webview) WebView webview;

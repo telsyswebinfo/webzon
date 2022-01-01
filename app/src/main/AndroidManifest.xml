@@ -1,409 +1,390 @@
-<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-package="webzon">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.webzon">
 
-<uses-sdk tools:overrideLibrary="com.truecaller.android.sdk" />
+    <uses-sdk tools:overrideLibrary="com.truecaller.android.sdk" />
 
-<uses-permission
-    android:name="android.permission.ACCESS_FINE_LOCATION"
-    tools:ignore="CoarseFineLocation" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission
-    android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
-    tools:ignore="ProtectedPermissions" />
-<uses-permission
-    android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-    tools:ignore="ScopedStorage" />
-<uses-permission
-    android:name="android.permission.READ_EXTERNAL_STORAGE"
-    tools:ignore="ScopedStorage" />
-<uses-permission android:name="android.permission.RECORD_AUDIO" />
-<uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.DEFAULT_SCOPED_STORAGE" />
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-<uses-permission android:name="android.permission.USE_APP_IMAGE_STARTUP_CACHE" />
-<uses-permission android:name="android.permission.FLAG_GRANT_READ_URI_PERMISSION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DEFAULT_SCOPED_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_APP_IMAGE_STARTUP_CACHE" />
+    <uses-permission android:name="android.permission.FLAG_GRANT_READ_URI_PERMISSION" />
 
-<uses-feature
-    android:name="android.hardware.location.network"
-    android:required="false" />
-<uses-feature
-    android:name="android.hardware.location.gps"
-    android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/r_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Webzon"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Demo2Activity"
+            android:exported="false" />
 
-<application
-
-    android:allowBackup="true"
-    android:icon="@drawable/logo"
-    android:label="@string/app_name"
-    android:requestLegacyExternalStorage="true"
-    android:roundIcon="@drawable/r_logo"
-    android:supportsRtl="true"
-    android:theme="@style/Theme.Webzon"
-    android:usesCleartextTraffic="true">
-
-
-    <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="@string/google_maps_key" />
-
-    <activity
-        android:name="com.webzon.Map.LocationPickerActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        android:windowSoftInputMode="stateVisible|adjustResize"
-        android:label="@string/title_activity_maps" />
-
-
-    <activity
-        android:name="com.webzon.Activity.Account.PrivacyPolicyActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.OrderRejActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.Manage.MyCustomersActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.Login.EnterOTPActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity"
-        android:windowSoftInputMode="stateVisible|adjustResize" />
-
-
-    <activity
-        android:name="com.webzon.Activity.Manage.ExtraChargesActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Manage.QRCodeActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Manage.CreateCouponsActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Manage.DiscountCouponsActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Manage.MarketingsActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Account.ShareAppActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Account.EditBusinessActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Account.AdditionalInformationActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Order.PendingOrderActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.SubCategoryActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Product.ChooseCategoryActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Product.AddProductActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.HomeActivity2"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.Login.CongratulationActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.WhatupNumberActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.SubHomeActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.HomeActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.DisCovActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Login.EnterBNameActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Login.EnterWhatupNoActivity"
-        android:exported="false"
-        android:windowSoftInputMode="adjustResize|stateHidden"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.SplashActivity"
-        android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-
-    <provider
-        android:name="androidx.core.content.FileProvider"
-        android:authorities="webzon.android.fileprovider"
-        android:exported="false"
-        android:grantUriPermissions="true"
-        tools:replace="android:authorities">
         <meta-data
-            android:name="android.support.FILE_PROVIDER_PATHS"
-            android:resource="@xml/provider_paths"
-            tools:replace="android:resource" />
-    </provider>
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
+        <activity
+            android:name=".Map.LocationPickerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".Activity.Account.PrivacyPolicyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.OrderRejActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.MyCustomersActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Login.EnterOTPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.ExtraChargesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.QRCodeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.CreateCouponsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.DiscountCouponsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.MarketingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Account.ShareAppActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Account.EditBusinessActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Account.AdditionalInformationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Order.PendingOrderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.SubCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.ChooseCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.AddProductActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.HomeActivity2"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Login.CongratulationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.WhatupNumberActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.SubHomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.DisCovActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Login.EnterBNameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Login.EnterWhatupNoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-    <activity
-        android:name="com.webzon.Activity.Manage.BusinesCardActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
-    <meta-data
-        android:name="com.truecaller.android.sdk.PartnerKey"
-        android:value="@string/partnerKey" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="webzon.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
 
+        <activity
+            android:name=".Activity.Manage.BusinesCardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
 
-    <meta-data
-        android:name="com.google.firebase.messaging.default_notification_channel_id"
-        android:value="@string/notification_channel_id" />
-
-    <meta-data
-        android:name="com.google.firebase.messaging.default_notification_icon"
-        android:resource="@drawable/logo" />
-
-    <meta-data
-        android:name="com.google.firebase.messaging.default_notification_color"
-        android:resource="@color/purple_200" />
-
-    <service
-        android:name="com.webzon.fcm.MyFirebaseMessagingService"
-        android:exported="true">
-        <intent-filter>
-            <action android:name="com.google.firebase.MESSAGING_EVENT" />
-        </intent-filter>
-    </service>
-
-    <activity
-        android:name="com.webzon.Activity.Manage.DukanDeliveryActivity"
-        android:exported="true"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.Manage.DukaanMarketingActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.CreateCampaignActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.Manage.OnlinePaymentActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.Manage.OrderFormActivity"
-        android:exported="true"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.Product.AddProduct2Activity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <activity
-        android:name="com.webzon.Activity.Product.AddVariantsActivity"
-        android:exported="true"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-
-    <provider
-        android:name="androidx.core.content.FileProvider"
-        android:authorities="com.webzon"
-        android:exported="false"
-        android:grantUriPermissions="true">
         <meta-data
-            android:name="android.support.FILE_PROVIDER_PATHS"
-            android:resource="@xml/provider_paths" />
-    </provider>
+            android:name="com.truecaller.android.sdk.PartnerKey"
+            android:value="@string/partnerKey" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_200" />
 
-    <activity
-        android:name="com.webzon.Activity.WebViewActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Product.ProductDetailsActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Product.EditProductActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Product.CreateCategoryActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Product.EditCategoryActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
-    <activity
-        android:name="com.webzon.Activity.Product.CatalogCategoryActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Product.CatalogItemListActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Product.CategoryWiseProductActivity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
-    <activity
-        android:name="com.webzon.Activity.Main1Activity"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.DukanDeliveryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.DukaanMarketingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.CreateCampaignActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.OnlinePaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Manage.OrderFormActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.AddProduct2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.AddVariantsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
 
-    <activity
-        android:name="com.webzon.intro.Intro"
-        android:exported="false"
-        android:screenOrientation="portrait"
-        tools:ignore="LockedOrientationActivity" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.webzon"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
 
-    <activity
-        android:name="com.webzon.Activity.DilogActivity"
-        android:exported="false"
-        android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Activity.WebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.ProductDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.EditProductActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.CreateCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.EditCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.CatalogCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.CatalogItemListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Product.CategoryWiseProductActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.Main1Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".intro.Intro"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.DilogActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Dialog" />
 
-    <receiver
-        android:name="com.webzon.smeRetriever.MySMSBroadcastReceiver"
-        android:exported="true"
-        android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+        <receiver
+            android:name=".smeRetriever.MySMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.DemoActivity"
+            android:exported="true">
+
+            <!--
         <intent-filter>
-            <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
-        </intent-filter>
-    </receiver>
-
-    <activity
-        android:name="com.webzon.Activity.DemoActivity"
-        android:exported="true">
-        <!-- <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>-->
-    </activity>
-
-
-    <meta-data
-        android:name="com.facebook.sdk.ApplicationId"
-        android:value="@string/facebook_app_id" />
-
-    <activity
-        android:name="com.facebook.FacebookActivity"
-        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-        android:label="@string/app_name" />
-    <activity
-        android:name="com.facebook.CustomTabActivity"
-        android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.VIEW" />
-
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.BROWSABLE" />
-
-            <data android:scheme="@string/fb_login_protocol_scheme" />
         </intent-filter>
-    </activity>
+            -->
+        </activity>
 
-    <activity
-        android:name="com.webzon.Yplayer.TutorialsActivity"
-        android:exported="true">
-       <!-- <intent-filter>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Yplayer.TutorialsActivity"
+            android:exported="true">
+
+            <!--
+        <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>-->
-    </activity>
-
-    <activity
-        android:name="com.webzon.Yplayer.FullScreenLessonPlayerActivity"
-        android:exported="false"
-        android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-</application>
+        </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Yplayer.FullScreenLessonPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false" />
+    </application>
 
 </manifest>

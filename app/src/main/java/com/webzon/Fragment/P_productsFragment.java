@@ -42,7 +42,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import webzon.R;
+import com.webzon.R;
 
 public class P_productsFragment extends Fragment {
     View view;

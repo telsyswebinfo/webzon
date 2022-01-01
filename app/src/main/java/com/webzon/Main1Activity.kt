@@ -8,9 +8,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.ui.setupActionBarWithNavController
-import webzon.R
-import webzon.databinding.ActivityMain1Binding
+import com.webzon.R
+import com.webzon.databinding.ActivityMain1Binding
+
 
 class Main1Activity : AppCompatActivity() {
     private lateinit var navController: NavController

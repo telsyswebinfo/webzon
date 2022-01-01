@@ -11,7 +11,7 @@ import com.webzon.Activity.CreateCampaignActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import webzon.R;
+import com.webzon.R;
 
 public class DukaanMarketingActivity extends AppCompatActivity {
     @BindView(R.id.li_create_cam) LinearLayout li_create_cam;
