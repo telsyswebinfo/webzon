@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/action_bar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/activity_additional_information.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/activity_edit_business.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/activity_tutorials.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/faq_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/fragment_account.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/fragment_manage.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/tuto_row.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
