@@ -8,15 +8,18 @@ import android.widget.LinearLayout;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
+import com.bumptech.glide.Glide;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
+import com.webzon.Activity.Account.EditBusinessActivity;
 import com.webzon.Activity.DilogActivity;
 import com.webzon.Activity.Manage.BusinesCardActivity;
 import com.webzon.Adapter.BusinesCardAdapter;
@@ -59,6 +62,7 @@ public class TutorialsActivity extends YouTubeBaseActivity {
     TutoricalCategoryAdapter tutoricalCategoryAdapter;
     TutorialsActivity baseActivity;
     FaqListAdapter faqListAdapter;
+    SwipeRefreshLayout swipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +72,7 @@ public class TutorialsActivity extends YouTubeBaseActivity {
       //  playYouTubeVideo("https://www.youtube.com/watch?v=mXjZQX3UzOs");
         lay_nodata =findViewById(R.id.lay_nodata);
         rev_cate =findViewById(R.id.rev_cate);
+        swipe =findViewById(R.id.swipe);
         rev_cate.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         rev_cate.setHasFixedSize(true);
 
@@ -75,6 +80,15 @@ public class TutorialsActivity extends YouTubeBaseActivity {
         rev_faq.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         rev_faq.setHasFixedSize(true);
         getproductList1();
+
+        swipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener()
+        {
+            @Override
+            public void onRefresh()
+            {
+                swipe.setRefreshing(false);
+            }
+        });
 
     }
 

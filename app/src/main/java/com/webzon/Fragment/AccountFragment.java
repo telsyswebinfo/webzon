@@ -24,6 +24,7 @@ import com.bumptech.glide.Glide;
 import com.webzon.Activity.Account.AdditionalInformationActivity;
 import com.webzon.Activity.DilogActivity;
 import com.webzon.Activity.Account.EditBusinessActivity;
+import com.webzon.Yplayer.TutorialsActivity;
 import com.webzon.halper.StaticVariables;
 import com.webzon.utils.ApiUrl;
 import com.webzon.utils.SessionManager;
@@ -45,7 +46,7 @@ public class AccountFragment extends Fragment {
     private String mParam2;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    LinearLayout li_add_info;
+    LinearLayout li_add_info,li_tutorials;
     public static ImageView img_bus;
     TextView txt_edit_details;
     LinearLayout li_support,li_webzon;
@@ -80,6 +81,7 @@ public class AccountFragment extends Fragment {
         img_bus = view.findViewById(R.id.img_bus);
         li_support = view.findViewById(R.id.li_support);
         li_webzon = view.findViewById(R.id.li_webzon);
+        li_tutorials = view.findViewById(R.id.li_tutorials);
         swipe = view.findViewById(R.id.swipe);
         btn_sw = view.findViewById(R.id.btn_sw);
         Glide.with(this).load(sessionManager.getPreferences(getActivity(), "image")).placeholder(R.drawable.camera_gray).dontAnimate().into(img_bus);
@@ -99,6 +101,14 @@ public class AccountFragment extends Fragment {
                 startActivity(new Intent(getActivity(), EditBusinessActivity.class));
             }
         });
+
+        li_tutorials.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), TutorialsActivity.class));
+            }
+        });
+
         li_support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
