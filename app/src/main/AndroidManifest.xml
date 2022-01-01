@@ -393,7 +393,7 @@ package="webzon">
     <activity
         android:name="com.webzon.Yplayer.TutorialsActivity"
         android:exported="true">
-       <!-- <intent-filter>
+        <!-- <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>-->
@@ -402,8 +402,15 @@ package="webzon">
     <activity
         android:name="com.webzon.Yplayer.FullScreenLessonPlayerActivity"
         android:exported="false"
-        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        android:configChanges="keyboardHidden|orientation|screenSize" />
+    <activity
+        android:name="com.webzon.Activity.WebzonpcActivity"
+        android:exported="false"
+
+        />
 
 </application>
 
 </manifest>
+
+

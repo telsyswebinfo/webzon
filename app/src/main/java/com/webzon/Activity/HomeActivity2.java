@@ -99,7 +99,7 @@ public class HomeActivity2  extends CustomActivity {
 
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
         //bottomdilog();
-        bottomdilogbox();
+       // bottomdilogbox();
     }
 
     @SuppressLint("WrongConstant")
@@ -153,6 +153,15 @@ public class HomeActivity2  extends CustomActivity {
         dialog.setContentView(view);
         dialog.setCancelable(false);
         dialog.show();
+
+       /* btn_continue =findViewById(R.id.btn_continue);
+        btn_continue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+            }
+        });*/
+
 
     }
 }
