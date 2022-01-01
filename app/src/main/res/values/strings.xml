@@ -1,0 +1,134 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">WEBZON</string>
+    <string name="enter_business_name">Enter Business Name</string>
+    <string name="title_activity_chome">CHomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_products">Product</string>
+    <string name="title_order">Order</string>
+    <string name="title_manage">Manage</string>
+    <string name="title_account">Account</string>
+    <string name="choose_image_source">Choose Image Source</string>
+    <string name="write_external_storage">Need Exterenal Storage</string>
+    <string name="not_sufficient_permissions">Not sufficient permission</string>
+    <string name="permissionss">Permission</string>
+    <string name="loading">Loading ...</string>
+    <string name="pp"><p><b>The standard Lorem Ipsum passage, used since the 1500s</b>\n
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+<b>Section 1.10.32 of de Finibus Bonorum et Malorum, written by Cicero in 45 BC</b>
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+        <b>1914 translation by H. Rackham</b>
+But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+
+<b>Section 1.10.33 of de Finibus Bonorum et Malorum, written by Cicero in 45 BC</b>
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+
+<b>1914 translation by H. Rackham</b>
+On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains
+    </p>
+</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="option_get_place">Get place</string>
+    <string name="pick_place">Choose a place</string>
+
+    <string name="range_u20b950_lac_to_u20b925_lac"><![CDATA[*Range (₹50 lac < to <₹25 lac)]]></string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="range_u20b950_lac"><![CDATA[*Range (₹50 lac >)]]></string>
+    <string name="range_u20b9_25_lac"><![CDATA[*Range (<₹ 25 lac)]]></string>
+    <string name="error_api_key">Error Api Key</string>
+
+    <string name="google_maps_key">cancel</string>
+    <string name="launch_map_picker" translatable="false">LAUNCH MAP LOCATION PICKER ACTIVITY</string>
+    <string name="launch_legacy_map_picker" translatable="false">LAUNCH LEGACY MAP LOCATION ACTIVITY</string>
+    <string name="launch_map_picker_with_pois" translatable="false">LAUNCH MAP WITH POIS</string>
+    <string name="launch_map_picker_with_style" translatable="false">LAUNCH MAP WITH STYLE</string>
+    <string name="leku_lib_version" translatable="false">version 9.0.0</string>
+    <string name="leku_app_name" translatable="false" tools:ignore="UnusedResources">Leku</string>
+    <string name="leku_title_activity_location_picker" tools:ignore="UnusedResources">Location Picker</string>
+    <string name="partnerKey">4tHkb302cf2290db443d3b36b7662efad8f8e</string>
+    <string name="cancel" />
+    <string name="action_settings">Action Settings</string>
+    <string name="GPSAlertDialogMessage">GPS Alert Message</string>
+    <string name="GPSAlertDialogTitle">GPS Title</string>
+    <string name="app_says">App Says</string>
+    <string name="something_went_wrong">Something went wrong , while connecting with server.</string>
+    <string name="no_internet_message">Please connect your network.</string>
+    <string name="please_wait">Please wait</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="notification_channel_id">default</string>
+    <string name="gps_disabled_message" />
+
+    <string name="show_location_picker">Show Location Picker</string>
+    <string name="addressline1_hint">Enter Flat No / Floor / Landmark </string>
+    <string name="edittext_hint">"Click here to edit address location"</string>
+    <string name="api_key">AIzaSyAcQXo1A2BK9X-xhgEp3ooBqiIqZNcw9Vo</string>
+
+    <string-array name="array_name">
+        <item>Life Time</item>
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>Custom range</item>
+    </string-array>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_demo">Demo</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+
+
+    ///////////////////////////////////////////////////////////////
+    <string name="card_title_preview">Preview</string>
+    <string name="card_title_credits">Credits</string>
+
+    <string name="preview_title_big_cards">Big cards</string>
+    <string name="preview_title_small_cards">Small cards</string>
+    <string name="preview_title_vertical">Vertical scroll</string>
+
+    <string name="credit_title_taya">Taisiya Yurkiv</string>
+    <string name="credit_title_flaticon">Zlatko Najdenovski, Freepik</string>
+    <string name="credit_title_herriot">Herriottgrace</string>
+    <string name="credit_summary_taya">Sample app design</string>
+    <string name="credit_summary_flaticon">Monument icons from www.flaticon.com</string>
+    <string name="credit_summary_herriot">Shop goods photos from www.herriottgrace.com</string>
+
+    <string name="btn_smooth_scroll">Smooth scroll</string>
+    <string name="btn_transition_time">Transition time</string>
+
+    <string name="dialog_seekbar_transition_time">Item transition time in millis</string>
+
+    <string name="msg_no_browser">No app found to open the url</string>
+    <string name="msg_unsupported_op">Unsupported operation</string>
+
+    <string name="pref_key_transition_time" translatable="false">pref_key_transition_time</string>
+
+    <string name="mi_rate_on_github">Rate on GitHub</string>
+
+    <string name="cd_back">Back</string>
+    <string name="cd_comment">Comment</string>
+    <string name="cd_favourite">Favourite</string>
+    <string name="title_activity_h1">H1Activity</string>
+    <string name="ellipsis">&#8230;</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="continu">Continue</string>
+
+    <string name="phone_code" translatable="false">+%s</string>
+    <string name="country_name_and_code" translatable="false">%1$s (%2$s)</string>
+    <string name="search_hint">Search&#8230;</string>
+    <string name="no_result_found">No result found</string>
+    <string name="select_country">Select Country</string>
+    <string name="country_code_and_phone_code" translatable="false">(%1$s) +%2$s</string>
+    <string name="country_full_name_and_phone_code" translatable="false">%1$s +%2$s</string>
+    <string name="country_full_name_and_name_code" translatable="false">%1$s (%2$s)</string>
+    <string name="country_full_name_name_code_and_phone_code" translatable="false">%1$s (%2$s) +%3$s</string>
+    <string name="error_unregister_carrier_number" translatable="false">EditText for carrier number is not registered. Register it using registerPhoneNumberTextView() before getFullNumber() or setFullNumber().</string>
+    <string name="search">Search</string>
+    <string name="facebook_app_id">925744434977531</string>
+    <string name="fb_login_protocol_scheme">fb925744434977531</string>
+
+</resources>

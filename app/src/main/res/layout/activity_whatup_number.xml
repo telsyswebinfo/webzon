@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WhatupNumberActivity"
+    android:orientation="vertical">
+    <include layout="@layout/action_bar"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Enter Your\n Whatsapp Number"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  We will be sending you OTP"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/otp_icon"/>
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_w_number"
+            android:layout_width="match_parent"
+            android:hint="Enter Whatsup Number"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/li_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_w_OTP"
+                android:layout_width="match_parent"
+                android:hint="Please Enter OTP"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txt_timmer"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resend code in 28 seconds"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_get_otp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:text="GET OTP"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:id="@+id/btn_verify"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

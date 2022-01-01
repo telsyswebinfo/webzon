@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomdilog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add new Category"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/close_icon"/>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:padding="@dimen/_16sdp"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/userIDTextInputLayout"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/txt_cate"
+                   android:layout_width="match_parent"
+                   android:hint="Product Category"
+                   android:singleLine="true"
+                   android:layout_height="wrap_content" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <Button
+               android:id="@+id/btn_save"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Save"/>
+
+
+
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomdilog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select your category"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/close_icon"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discount Type"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio1" android:checked="true"
+                android:text="Percent">
+            </RadioButton>
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio2"
+                android:text="Flat Discount">
+            </RadioButton>
+        </RadioGroup>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userIDTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_charegename"
+                android:layout_width="match_parent"
+                android:hint="Charge name"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_charge"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:hint="Charges in Percent or Flat "
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:gravity="center|bottom"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_marginTop="10dp"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:text="Create"
+                android:background="@drawable/btn_bg_visit_s"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/_16sdp"
+        android:gravity="center"
+        android:background="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="Product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--  <Switch
+              android:switchMinWidth="@dimen/_50sdp"
+              android:layout_width="wrap_
+              content"
+              android:layout_height="wrap_content"
+              android:textOff="Online"
+              android:textOn="Offlie"/>-->
+
+    </LinearLayout>
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/tl_2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_margin_bottom="2dp"
+        tl:tl_indicator_margin_left="2dp"
+        tl:tl_indicator_margin_right="2dp"
+        tl:tl_indicator_margin_top="2dp"
+        tl:tl_tab_space_equal="true" />
+    <FrameLayout
+        android:id="@+id/container1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

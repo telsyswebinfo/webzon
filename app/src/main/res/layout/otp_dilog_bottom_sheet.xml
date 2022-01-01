@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomdilog"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter the 6-digit code send to you at +91 92******21"/>
+            <com.webzon.Activity.OtpEditText
+
+                android:imeOptions="actionGo"
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textIsSelectable="false"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resend code in 28 seconds"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:text="Sbumit"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

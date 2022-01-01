@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "269267742491",
+    "project_id": "webzon-c1352",
+    "storage_bucket": "webzon-c1352.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269267742491:android:da63135fb58f68f47d6dbe",
+        "android_client_info": {
+          "package_name": "com.webzon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269267742491-o67gfh2s3jt74l25b9ru5lf5ccki9rk1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webzon",
+            "certificate_hash": "5b27fd468f3a5411368ddbb2c6b3cbb04efe5c3d"
+          }
+        },
+        {
+          "client_id": "269267742491-snq9231oljuohd7vh682gkas22a9fa8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_0dcTDPHXcKo0Zq1iSguJJYonCRe7CfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269267742491-snq9231oljuohd7vh682gkas22a9fa8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

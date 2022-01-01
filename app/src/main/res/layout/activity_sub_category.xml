@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/action_bar"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="8dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            app:cardUseCompatPadding="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pic_15"/>
+
+                <TextView
+                    android:padding="16dp"
+                    android:gravity="center|left"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harpic Power plus Original \nToilet Cleaner - pack of 2"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 99"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="8dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            app:cardUseCompatPadding="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pic_16"/>
+                <TextView
+                    android:padding="16dp"
+                    android:gravity="center|left"
+
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organic Original Countmilk \nPack of 2 Poces"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 99"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="8dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            app:cardUseCompatPadding="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pic_17"/>
+                <TextView
+                    android:padding="16dp"
+                    android:gravity="center|left"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Almond Milk Plus Oroginal \nPowder pack of 2"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 99"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="8dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            app:cardUseCompatPadding="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pic_18"/>
+                <TextView
+                    android:padding="16dp"
+                    android:gravity="center|left"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fresh Chicken Fish &amp;\n Meat.."
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 99"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:gravity="center|bottom">
+
+        <Button
+            android:capitalize="none"
+            android:id="@+id/btn_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:drawableLeft="@drawable/categories_browser"
+            android:backgroundTint="@android:color/white"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/roundedbutton1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

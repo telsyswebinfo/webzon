@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimelineView" >
+        <attr name="marker" format="color|reference"/>
+        <attr name="markerSize" format="dimension"/>
+        <attr name="markerPaddingLeft" format="dimension"/>
+        <attr name="markerPaddingTop" format="dimension"/>
+        <attr name="markerPaddingRight" format="dimension"/>
+        <attr name="markerPaddingBottom" format="dimension"/>
+        <attr name="markerInCenter" format="boolean"/>
+        <attr name="startLineColor" format="color"/>
+        <attr name="endLineColor" format="color"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="lineStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <attr name="lineStyleDashGap" format="dimension" />
+        <attr name="lineStyleDashLength" format="dimension" />
+        <attr name="lineOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="linePadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmoothBottomBar">
+        <attr name="menu" format="reference" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="indicatorColor" format="color" />
+        <attr name="indicatorRadius" format="dimension" />
+        <attr name="sideMargins" format="dimension" />
+        <attr name="itemPadding" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="itemFontFamily" format="reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconMargin" format="dimension" />
+        <attr name="iconTint" format="color"/>
+        <attr name="iconTintActive" format="color"/>
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="activeItem" format="integer" />
+        <attr name="duration" format="integer" />
+        <attr name="corners">
+            <flag name="none" value="0" />
+            <flag name="top_left" value="1" />
+            <flag name="top_right" value="2" />
+            <flag name="bottom_right" value="4" />
+            <flag name="bottom_left" value="8" />
+            <flag name="all" value="15" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="SmoothBottomBarStyle" format="reference" />
+
+    <declare-styleable name="OtpTextView">
+        <attr name="android:textColor" />
+        <attr name="otp" format="string" />
+        <attr name="hide_otp" format="boolean" />
+        <attr name="hide_otp_drawable" format="reference" />
+        <attr name="length" format="integer" />
+        <attr name="width" format="dimension" />
+        <attr name="height" format="dimension" />
+        <attr name="box_margin" format="dimension" />
+        <attr name="box_margin_left" format="dimension" />
+        <attr name="box_margin_right" format="dimension" />
+        <attr name="box_margin_top" format="dimension" />
+        <attr name="box_margin_bottom" format="dimension" />
+        <attr name="bar_height" format="dimension" />
+        <attr name="bar_enabled" format="boolean" />
+        <attr name="otp_box_background" format="reference" />
+        <attr name="otp_box_background_active" format="reference" />
+        <attr name="otp_box_background_inactive" format="reference" />
+        <attr name="otp_box_background_success" format="reference" />
+        <attr name="otp_box_background_error" format="reference" />
+        <attr name="bar_margin" format="dimension" />
+        <attr name="bar_margin_bottom" format="dimension" />
+        <attr name="bar_margin_right" format="dimension" />
+        <attr name="bar_margin_left" format="dimension" />
+        <attr name="bar_margin_top" format="dimension" />
+        <attr name="otp_text_size" format="dimension" />
+        <attr name="bar_active_color" format="color" />
+        <attr name="bar_inactive_color" format="color" />
+        <attr name="bar_error_color" format="color" />
+        <attr name="bar_success_color" format="color" />
+        <attr name="text_typeface" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CountryCodePicker">
+        <attr format="integer" name="ccp_defaultCode"/>
+        <attr format="color" name="ccp_textColor"/>
+        <attr format="color" name="ccp_backgroundColor"/>
+        <attr format="dimension" name="ccp_textSize"/>
+        <attr format="string" name="ccp_textFont"/>
+        <attr format="dimension" name="ccp_arrowSize"/>
+        <attr format="string" name="ccp_countryPreference"/>
+        <attr format="string" name="ccp_defaultNameCode"/>
+        <attr format="boolean" name="ccp_hideNameCode"/>
+        <attr format="boolean" name="ccp_keyboardAutoPopOnSearch"/>
+        <attr format="string" name="ccp_customMasterCountries"/>
+        <attr format="boolean" name="ccp_showFlag"/>
+        <attr format="boolean" name="ccp_showFullName"/>
+        <attr format="boolean" name="ccp_selectionDialogShowSearch"/>
+        <attr format="boolean" name="ccp_clickable"/>
+        <attr format="boolean" name="ccp_hidePhoneCode"/>
+        <attr format="boolean" name="ccp_enableHint"/>
+        <attr format="boolean" name="ccp_enablePhoneAutoFormatter"/>
+        <attr format="boolean" name="ccp_setCountryByTimeZone"/>
+
+        <!--For dialog-->
+        <attr format="color" name="ccp_dialogTextColor"/>
+    </declare-styleable>
+
+</resources>

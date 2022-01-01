@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomdilog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share Product as"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/close_icon"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/pdf"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PDF"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/picture"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEXT+IMAGE"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

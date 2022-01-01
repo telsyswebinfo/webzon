@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar"/>
+
+
+    <LinearLayout
+        android:id="@+id/li_share_app"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Webzon App"/>
+
+        <ImageView
+            android:paddingRight="@dimen/_20sdp"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@drawable/arrow_forward_black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Language"/>
+
+        <ImageView
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@drawable/arrow_forward_black"/>
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whatapp chat support"/>
+
+        <Switch
+            android:id="@+id/btn_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/_10sdp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+
+    <LinearLayout
+        android:id="@+id/li_pp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+    <LinearLayout
+        android:id="@+id/li_rate_us"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate us"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+    <LinearLayout
+        android:id="@+id/li_sign_out"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

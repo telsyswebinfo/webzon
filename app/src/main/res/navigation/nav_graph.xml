@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.webzon.Fragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/navigation_products" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_products"
+        android:name="com.webzon.Fragment.ProductsFragment"
+        android:label="@string/title_products"
+        tools:layout="@layout/fragment_products">
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/navigation_order" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.webzon.Fragment.OrderFragment"
+        android:label="@string/title_order"
+        tools:layout="@layout/fragment_order">
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/navigation_manage" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_manage"
+        android:name="com.webzon.Fragment.ManageFragment"
+        android:label="@string/title_manage"
+        tools:layout="@layout/fragment_manage">
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/navigation_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.webzon.Fragment.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account"/>
+
+</navigation>

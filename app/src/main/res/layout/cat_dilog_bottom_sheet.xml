@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomdilog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select your category"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/close_icon"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_cat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"/>
+
+        <!--<LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/image_bg">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/kirana_icon"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kirana Store, FMCG &amp; Grocery"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/image_bg">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fashion_icon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion Apparels, Garments &amp; Clothing Accessories"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/image_bg">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/decoration_icon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home decoration 7 electronics appliances"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/image_bg">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/accessories_icon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile, Computer &amp; other accessories"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/image_bg">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/hotels_icon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurants &amp; hotels"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

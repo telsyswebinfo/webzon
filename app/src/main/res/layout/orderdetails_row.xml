@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/list_bg">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/icon_gro1"
+                app:cardBackgroundColor="#eceff4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center|left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+
+
+            <LinearLayout
+                android:paddingLeft="@dimen/_16sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_p_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Items: "
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Items: "
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:id="@+id/txt_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

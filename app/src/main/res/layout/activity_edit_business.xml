@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/action_bar"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:cardBackgroundColor="#f0f0f0"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp">>
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="1"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardElevation="8dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardCornerRadius="10dp"
+                            android:padding="10dp"
+                            app:cardUseCompatPadding="false">>
+                            <LinearLayout
+                                android:id="@+id/li_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <!--<com.theartofdev.edmodo.cropper.CropImageView
+                                    android:id="@+id/img_bus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/camera_gray"/>-->
+                                <ImageView
+                                    android:scaleType="fitXY"
+                                    android:id="@+id/img_bus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/camera_gray"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/txt_photo"
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Update store logo"
+                            android:textColor="#25518e"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userIDTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_stlink"
+                    android:layout_width="match_parent"
+                    android:hint="Store link"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_bname"
+                    android:layout_width="match_parent"
+                    android:hint="Business Name"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_bcategory"
+                    android:layout_width="match_parent"
+                    android:hint="Business Category"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phonenumber"
+                    android:layout_width="match_parent"
+                    android:hint="Phone Number"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:focusable="false"
+                    android:inputType="none"
+                     android:longClickable="false"
+                    android:hint="Address"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_50sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete my account"
+                    android:textSize="@dimen/_22sdp"
+                    android:textColor="#ae0002"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="16dp"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="50dp"
+                    android:textSize="16dp"
+                    android:text="Save"
+                    android:background="@drawable/btn_bg_visit_s"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

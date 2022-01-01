@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingLeft="@dimen/_16sdp"
+        android:gravity="center"
+        android:background="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="Manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--  <Switch
+              android:switchMinWidth="@dimen/_50sdp"
+              android:layout_width="wrap_
+              content"
+              android:layout_height="wrap_content"
+              android:textOff="Online"
+              android:textOn="Offlie"/>-->
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/li_marketings"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/img_md"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marketings\nDesigns"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_onlinepayment"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:paddingLeft="@dimen/_100sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/img_op"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Online\nPayments"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/li_ds"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/img_dc"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discount\nCoupons"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_mc"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:paddingLeft="@dimen/_100sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/img_mc"/>
+
+                    <TextView
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My\nCustomers"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/li_qr_code"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/img_sc"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Store QR\nCode"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_extra_charges"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:paddingLeft="@dimen/_100sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/img_ec"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extra\nCharges"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/li_orderform"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/img_of"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order\nForm"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_dukan_delivery"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/delivery"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dukan Delivery"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/li_du_maarketing"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/dukaan_marketing"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dukaan\nMarketing"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_design">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/delivery"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dukan Delivery"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webzon.Activity.Manage.DukanDeliveryActivity"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:paddingLeft="@dimen/_16sdp"
+      android:paddingRight="@dimen/_16sdp"
+      android:gravity="center|left"
+      android:background="@color/purple_200"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_45sdp"
+      android:orientation="horizontal">
+
+     <TextView
+         android:layout_weight="1"
+         android:textSize="@dimen/_14sdp"
+         android:textColor="@color/white"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+       android:text="Order Form"/>
+       <ImageView
+           android:id="@+id/img_work"
+           android:layout_width="@dimen/_16sdp"
+           android:layout_height="@dimen/_16sdp"
+         android:background="@drawable/question_mark_icon"/>
+
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/li_upi"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/list_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+      <TextView
+          android:gravity="center|left"
+          android:paddingLeft="@dimen/_16sdp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_margin="@dimen/_16sdp"
+          android:background="@drawable/list_bg"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_30sdp">
+        <TextView
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Mobile Number"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+
+
+      </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <LinearLayout
+
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/list_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+          <TextView
+              android:gravity="center|left"
+              android:paddingLeft="@dimen/_16sdp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="City"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/list_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+          <TextView
+              android:gravity="center|left"
+              android:paddingLeft="@dimen/_16sdp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Pincode"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>

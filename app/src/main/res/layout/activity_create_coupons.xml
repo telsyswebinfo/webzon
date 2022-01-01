@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/action_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userIDTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_co_code"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:layout_width="match_parent"
+                    android:hint="Coupon code"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_usees"
+                    android:layout_width="match_parent"
+                    android:hint="User per customer"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="1"
+                    android:maxLength="2"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_tusees"
+                    android:layout_width="match_parent"
+                    android:hint="Use Total customer"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:maxLength="2"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Discount Type"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio1" android:checked="true"
+                        android:text="Percent">
+                    </RadioButton>
+                    <RadioButton android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio2"
+                        android:text="Flat Discount">
+                    </RadioButton>
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_per"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_per"
+                    android:layout_width="match_parent"
+                    android:hint="Percent or Flat Discount"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:prefixText="\u20B9"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_min_order"
+                    android:layout_width="match_parent"
+                    android:hint="Min amount order"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:prefixText="\u20B9"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_min_dis"
+                    android:layout_width="match_parent"
+                    android:hint="Min discount amount"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:paddingRight="@dimen/_16sdp"
+                android:paddingLeft="@dimen/_16sdp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date"/>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/edit_text_border"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <TextView
+                        android:id="@+id/txt_sdate"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Date"/>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/edit_text_border"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <TextView
+                        android:id="@+id/txt_edate"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show coupon to customer"/>
+
+                <Switch
+                    android:id="@+id/sw_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/_10sdp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This will allow to customer to see it. while appling the\ncoupon."/>
+
+            <LinearLayout
+                android:layout_margin="16dp"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_create"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="50dp"
+                    android:textSize="16dp"
+                    android:text="Create"
+                    android:background="@drawable/btn_bg_visit_s"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

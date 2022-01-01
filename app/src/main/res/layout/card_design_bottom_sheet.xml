@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomdilog"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="left"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Template"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/close_icon"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:id="@+id/userIDTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_cate"
+                android:layout_width="match_parent"
+                android:hint="Header"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/li_rej"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_visit_s">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

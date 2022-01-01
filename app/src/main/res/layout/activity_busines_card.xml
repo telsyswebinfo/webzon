@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/action_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:id="@+id/li_share"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:gravity="center">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:minHeight="@dimen/_250sdp" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lay_nodata"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_no_data_found"/>
+
+                <TextView
+                    android:id="@+id/tv_no_data"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opps no data available"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/li_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:id="@+id/btn_edittext"
+                android:layout_weight="1"
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Text"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:id="@+id/btn_share"
+                android:layout_weight="1"
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:backgroundTint="@color/purple_200"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="invisible"
+        android:layout_weight="1"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp">
+
+        <FrameLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:textColor="@color/white" />
+
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

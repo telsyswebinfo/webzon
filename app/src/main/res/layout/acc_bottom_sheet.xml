@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomdilog"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Delivery Time"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/close_icon"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30-60 minutes"
+                android:backgroundTint="@color/black"/>
+            <Button
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-4 hours"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/darker_gray"/>
+            <Button
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4-24 hours"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/darker_gray"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-3 days"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/darker_gray"/>
+            <Button
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3-5 days"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/darker_gray"/>
+            <Button
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5-10 dys"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/darker_gray"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10+ days"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/darker_gray"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/li_rej"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:background="@drawable/rej_btn_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

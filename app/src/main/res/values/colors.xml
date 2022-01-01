@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#2b405b</color>
+    <color name="purple_500">#2b405b</color>
+    <color name="purple_700">#2b405b</color>
+    <color name="teal_200">#2b405b</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorBottomNav">#018786</color>
+    <color name="colorBottomNavItemChecked">#ffffff</color>
+    <color name="colorBottomNavItemUnchecked">#4dffffff</color>
+    <color name="colorPrimary">#2b405b</color>
+    <color name="colorOnPrimary">#ffffff</color>
+
+    <color name="color_item_bg">#6086a3</color>
+    <color name="color_view_bg">#1e6390</color>
+    <color name="color_view_btn">#1fbaf3</color>
+
+
+
+    <color name="leku_app_blue">#3DA8E1</color>
+    <color name="leku_app_strong_blue">#053B58</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorTextPrimary">#ffffff</color>
+
+    <color name="yellow">#dd870d</color>
+    <color name="green_light">#35ea35</color>
+    <color name="custom_blue">#5b55cb</color>
+    <color name="red">#b60a15</color>
+    <color name="dr">#905eb8</color>
+
+    <color name="grey">#a9a9a9</color>
+
+
+    <color name="colorAccent">#5c06a8</color>
+    <color name="colorAccentlight">#8509f2</color>
+    <color name="green">#33cc33</color>
+    <color name="whiteoff">#606060</color>
+    <color name="defaultBackgroundColor">@android:color/transparent</color>
+    <color name="white_aa">#aaffffff</color>
+    <color name="white_60">#60ffffff</color>
+    <color name="white_dim">#eaebf0</color>
+    <color name="fb_color">#3c5b9b</color>
+
+
+
+</resources>

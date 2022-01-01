@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webzon.Main1Activity">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph='@navigation/nav_graph'
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:backgroundColor="@color/colorPrimary"
+        app:textColor="@color/colorTextPrimary"
+        app:textSize="8sp"
+        app:iconSize="24dp"
+        app:indicatorColor="#2DFFFFFF"
+        app:indicatorRadius="16dp"
+        app:sideMargins="10dp"
+        app:itemPadding="10dp"
+        app:iconTint="#C8FFFFFF"
+        app:iconTintActive="#FFFFFF"
+        app:cornerRadius="16dp"
+        app:corners="top_left|bottom_right"
+        app:menu="@menu/menu_bottom"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"/>
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Products"/>
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order"/>
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage"/>
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
