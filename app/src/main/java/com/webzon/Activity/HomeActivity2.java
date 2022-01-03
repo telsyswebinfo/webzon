@@ -103,10 +103,11 @@ public class HomeActivity2  extends CustomActivity {
         //bottomdilog();
         try{
             if(!sessionManager.getPreferences(HomeActivity2.this, "trial").equals("1")){
-                bottomdilogbox();
+               // bottomdilogbox();
             }
-        }catch (Exception E){}
 
+        }catch (Exception E){}
+        bottomdilogbox();
     }
 
     @SuppressLint("WrongConstant")
@@ -138,13 +139,21 @@ public class HomeActivity2  extends CustomActivity {
 
     private void bottomdilog() {
         TextView txt_continue;
+        Button btn_upgrade_premium;
         View view = getLayoutInflater().inflate(R.layout.plan_up, null);
         BottomSheetDialog dialog = new BottomSheetDialog(this,R.style.BottomSheetDialog); // Style here
         dialog.setContentView(view);
         dialog.setCancelable(false);
         dialog.show();
         txt_continue = view.findViewById(R.id.txt_continue);
-
+        btn_upgrade_premium = view.findViewById(R.id.btn_continue);
+        btn_upgrade_premium.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity2.this, WebzonPlanActivity.class));
+                dialog.cancel();
+            }
+        });
         txt_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

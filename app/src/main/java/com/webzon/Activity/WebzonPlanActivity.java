@@ -63,6 +63,8 @@ public class WebzonPlanActivity extends AppCompatActivity {
     TextView tvPremium;
     @BindView(R.id.btn_subscribe)
     TextView btn_subscribe;
+    @BindView(R.id.cross_arrow)
+    ImageView cross_arrow;
     WebzonPlanAdapter webzonPlanAdapter;
     public  static boolean Type = false;
     @Override
@@ -76,6 +78,12 @@ public class WebzonPlanActivity extends AppCompatActivity {
         tvliteyear.setTextColor(getResources().getColor(R.color.purple_200));
         btn_subscribe.setText("Subscribe to Premium for "+tvliters.getText().toString());
         img_lite_right.setVisibility(View.VISIBLE);
+        cross_arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         rec_plan.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         rec_plan.setHasFixedSize(true);
         webzonPlanAdapter = new WebzonPlanAdapter(this);

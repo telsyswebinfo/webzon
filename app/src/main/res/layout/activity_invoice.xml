@@ -5,67 +5,301 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.InvoiceActivity"
-    android:orientation="vertical"
-    android:background="@drawable/edit_text_border_black">
+    android:orientation="vertical">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+      <ImageView
+          android:layout_width="@dimen/_150sdp"
+          android:layout_height="@dimen/_30sdp"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:src="@drawable/webzon_img"/>
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:gravity="right"
+           android:layout_marginRight="@dimen/_10sdp"
+           android:layout_alignParentRight="true">
+           <TextView
+               android:id="@+id/tvCompanyName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_alignParentRight="true"
+               android:text="Company Name"
+               android:textColor="@color/black"
+               android:textSize="13sp"
+               android:textStyle="bold" />
+           <TextView
+               android:id="@+id/tvStreetAddress"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Street Address line"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvCompanyName"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tv2ndStreet"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="2nd Street Address"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvStreetAddress"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvLocailty"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Locality"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tv2ndStreet"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvRegion"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Region EX12 BPZ"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvLocailty"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvEmail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="email@company.com"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvRegion"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvSales"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="SALE TAX: 12345678"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvEmail"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+       </RelativeLayout>
 
-
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:gravity="left"
+           android:layout_marginLeft="@dimen/_10sdp"
+           android:layout_alignParentLeft="true">
+           <TextView
+               android:id="@+id/tvName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_alignParentLeft="true"
+               android:text="John Doe"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvClientCompany"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Street Address line"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@id/tvName"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvClientStreetAddress"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Client Street Address"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@id/tvClientCompany"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvStreetAddress2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Street Address 2"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@id/tvClientStreetAddress"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvStreetAddress3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Street Address 3"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@id/tvStreetAddress2"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvLocailty2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Locailty"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@id/tvStreetAddress3"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvEmail2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="email@company.com"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@id/tvLocailty2"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvSales2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="SALE TAX: 12345678"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@id/tvEmail2"
+               android:textColor="@color/black"
+               android:textSize="13sp"/>
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="@dimen/_170sdp"
+           android:layout_height="@dimen/_110sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:gravity="center"
+           android:background="@drawable/bg_invoice"
+           android:layout_alignParentRight="true">
+           <TextView
+               android:id="@+id/tvInvoice"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_alignParentRight="true"
+               android:text="Invoice INV001"
+               android:textColor="@color/white"
+               android:textSize="13sp"
+               android:textStyle="bold" />
+           <TextView
+               android:id="@+id/tvDate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="21 March 2020"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvInvoice"
+               android:textColor="@color/white"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvPayment"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Payment Terms: 30 days"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvDate"
+               android:textColor="@color/white"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvPaymentDue"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Payment due by 21 March 2008"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvPayment"
+               android:textColor="@color/white"
+               android:textSize="13sp"/>
+           <TextView
+               android:id="@+id/tvRs"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="$2643.75"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/tvPaymentDue"
+               android:textColor="@color/white"
+               android:textSize="13sp"/>
+       </RelativeLayout>
+   </RelativeLayout>
     <LinearLayout
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal">
         <TextView
-            android:textSize="@dimen/_8sdp"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".15"
             android:layout_height="wrap_content"
-            android:text="( Original for Receipient )"
-            android:gravity="right|top"/>
-
-
-
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="Quantity"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
         <TextView
-            android:textStyle="bold"
-            android:textSize="@dimen/_12sdp"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".55"
             android:layout_height="wrap_content"
-            android:text="CHANDANI CONSTRUCTION COMPANY"
-            android:gravity="center"/>
-
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
         <TextView
-            android:textStyle="bold"
-            android:textSize="@dimen/_8sdp"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".10"
             android:layout_height="wrap_content"
-            android:text="NIWANA WALO KI DHANI, ACHHOJAI, CHATARPURA, Jaipur, Rajasthan, 303701"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="Unit Price()"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
         <TextView
-            android:textStyle="bold"
-            android:textSize="@dimen/_8sdp"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".10"
             android:layout_height="wrap_content"
-            android:text="MOBILE NO- +91-6378309425"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="VAT"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
         <TextView
-            android:textStyle="bold"
-            android:textSize="@dimen/_8sdp"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".10"
             android:layout_height="wrap_content"
-            android:text="GSTIN: 08BAPPK6861B1ZI"
-            android:gravity="center"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_1sdp"
-            android:background="@color/purple_200"/>
-
-
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="Net Subtotal"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/purple_200"/>
-
 </LinearLayout>

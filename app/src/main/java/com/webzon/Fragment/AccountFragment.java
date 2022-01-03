@@ -29,6 +29,7 @@ import com.bumptech.glide.Glide;
 import com.webzon.Activity.Account.AdditionalInformationActivity;
 import com.webzon.Activity.DilogActivity;
 import com.webzon.Activity.Account.EditBusinessActivity;
+import com.webzon.Activity.InvoiceActivity;
 import com.webzon.Activity.WebzonPlanActivity;
 import com.webzon.Activity.WebzonpcActivity;
 import com.webzon.Yplayer.TutorialsActivity;
@@ -56,7 +57,7 @@ public class AccountFragment extends Fragment {
     LinearLayout li_add_info,li_tutorials;
     public static ImageView img_bus;
     TextView txt_edit_details;
-    LinearLayout li_support,li_webzon,linear_support;
+    LinearLayout li_support,li_webzon,linear_support,linear_howtouse;
     String currentDateandTime;
     public static TextView txt_name;
     SessionManager sessionManager = new SessionManager();
@@ -90,6 +91,7 @@ public class AccountFragment extends Fragment {
         linear_support = view.findViewById(R.id.linear_support);
         li_webzon = view.findViewById(R.id.li_webzonpc);
         li_tutorials = view.findViewById(R.id.li_tutorials);
+        linear_howtouse = view.findViewById(R.id.li_howtouse);
         swipe = view.findViewById(R.id.swipe);
         btn_sw = view.findViewById(R.id.btn_sw);
         Glide.with(this).load(sessionManager.getPreferences(getActivity(), "image")).placeholder(R.drawable.camera_gray).dontAnimate().into(img_bus);
@@ -103,6 +105,12 @@ public class AccountFragment extends Fragment {
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault());
         currentDateandTime = sdf.format(new Date());
+        linear_howtouse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), InvoiceActivity.class));
+            }
+        });
         txt_edit_details.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -139,7 +147,7 @@ public class AccountFragment extends Fragment {
         li_webzon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), WebzonPlanActivity.class));
+                startActivity(new Intent(getActivity(), WebzonpcActivity.class));
                 //Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://webzon.in/"));
                // startActivity(viewIntent);
             }
