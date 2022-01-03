@@ -9,7 +9,6 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -148,12 +147,13 @@ public class HomeActivity2  extends CustomActivity {
     }
 
     private void bottomdilogbox() {
-     //   Button btn_continue;
+
         View view = getLayoutInflater().inflate(R.layout.bottom_items, null);
         BottomSheetDialog dialog = new BottomSheetDialog(this,R.style.BottomSheetDialog); // Style here
         dialog.setContentView(view);
         dialog.setCancelable(false);
         dialog.show();
+
        /* btn_continue =findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -161,6 +161,7 @@ public class HomeActivity2  extends CustomActivity {
                 dialog.cancel();
             }
         });*/
+
 
     }
 }

@@ -24,6 +24,7 @@ import com.bumptech.glide.Glide;
 import com.webzon.Activity.Account.AdditionalInformationActivity;
 import com.webzon.Activity.DilogActivity;
 import com.webzon.Activity.Account.EditBusinessActivity;
+import com.webzon.Activity.WebzonpcActivity;
 import com.webzon.Yplayer.TutorialsActivity;
 import com.webzon.halper.StaticVariables;
 import com.webzon.utils.ApiUrl;
@@ -80,7 +81,7 @@ public class AccountFragment extends Fragment {
         txt_edit_details = view.findViewById(R.id.txt_edit_details);
         img_bus = view.findViewById(R.id.img_bus);
         li_support = view.findViewById(R.id.li_support);
-        li_webzon = view.findViewById(R.id.li_webzon);
+        li_webzon = view.findViewById(R.id.li_webzonpc);
         li_tutorials = view.findViewById(R.id.li_tutorials);
         swipe = view.findViewById(R.id.swipe);
         btn_sw = view.findViewById(R.id.btn_sw);
@@ -131,8 +132,9 @@ public class AccountFragment extends Fragment {
         li_webzon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://webzon.in/"));
-                startActivity(viewIntent);
+                startActivity(new Intent(getActivity(), WebzonpcActivity.class));
+                //Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://webzon.in/"));
+               // startActivity(viewIntent);
             }
         });
 
