@@ -88,12 +88,12 @@
 
                 <Button
                     android:id="@+id/btn_create_tax"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="@dimen/_150sdp"
+                    android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:textSize="14dp"
-                    android:text="Create a Tax"
-                    android:background="@drawable/btn_bg_visit_s"/>
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_bg_visit_s"
+                    android:text="Request ITR Online"
+                    android:textSize="14dp" />
 
             </LinearLayout>
 

@@ -76,6 +76,10 @@ On the other hand, we denounce with righteous indignation and dislike men who ar
         <item>This Month</item>
         <item>Custom range</item>
     </string-array>
+    <string-array name="tax_type">
+        <item>ITR Return</item>
+        <item>GST Registration</item>
+    </string-array>
     <string name="title_activity_main3">Main3Activity</string>
     <string name="title_activity_demo">Demo</string>
     <string name="title_activity_bottom">BottomActivity</string>
