@@ -1,5 +1,7 @@
 package com.webzon.Fragment;
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -7,14 +9,17 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.viewpager.widget.ViewPager;
 
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
@@ -24,6 +29,7 @@ import com.bumptech.glide.Glide;
 import com.webzon.Activity.Account.AdditionalInformationActivity;
 import com.webzon.Activity.DilogActivity;
 import com.webzon.Activity.Account.EditBusinessActivity;
+import com.webzon.Activity.WebzonPlanActivity;
 import com.webzon.Activity.WebzonpcActivity;
 import com.webzon.Yplayer.TutorialsActivity;
 import com.webzon.halper.StaticVariables;
@@ -50,7 +56,7 @@ public class AccountFragment extends Fragment {
     LinearLayout li_add_info,li_tutorials;
     public static ImageView img_bus;
     TextView txt_edit_details;
-    LinearLayout li_support,li_webzon;
+    LinearLayout li_support,li_webzon,linear_support;
     String currentDateandTime;
     public static TextView txt_name;
     SessionManager sessionManager = new SessionManager();
@@ -81,6 +87,7 @@ public class AccountFragment extends Fragment {
         txt_edit_details = view.findViewById(R.id.txt_edit_details);
         img_bus = view.findViewById(R.id.img_bus);
         li_support = view.findViewById(R.id.li_support);
+        linear_support = view.findViewById(R.id.linear_support);
         li_webzon = view.findViewById(R.id.li_webzonpc);
         li_tutorials = view.findViewById(R.id.li_tutorials);
         swipe = view.findViewById(R.id.swipe);
@@ -110,10 +117,10 @@ public class AccountFragment extends Fragment {
             }
         });
 
-        li_support.setOnClickListener(new View.OnClickListener() {
+        linear_support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                showdata();
             }
         });
 
@@ -132,7 +139,7 @@ public class AccountFragment extends Fragment {
         li_webzon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), WebzonpcActivity.class));
+                startActivity(new Intent(getActivity(), WebzonPlanActivity.class));
                 //Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://webzon.in/"));
                // startActivity(viewIntent);
             }
@@ -205,6 +212,61 @@ public class AccountFragment extends Fragment {
                     }
                 });
     }
+    private void showdata(){
+        final Dialog dialog = new Dialog(getContext());
+        ImageView crossbtn;
+        LinearLayout linearLivechat,linearPhonecall;
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.supportitems);
+        dialog.getWindow().setLayout(ViewPager.LayoutParams.MATCH_PARENT, ViewPager.LayoutParams.WRAP_CONTENT);
+        crossbtn = dialog.findViewById(R.id.cross_arrow);
+        linearLivechat = dialog.findViewById(R.id.linearLivechat);
+        linearPhonecall = dialog.findViewById(R.id.linearPhonecall);
+        linearLivechat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CustomTabsIntent.Builder customIntent = new CustomTabsIntent.Builder();
+                //customIntent.setToolbarColor(context.getColor(R.color.colorPrimaryDark));
+                openCustomTab(getActivity(), customIntent.build(), Uri.parse("http://15.207.247.152/chat-support"));
+               dialog.cancel();
+            }
+        });
+        linearPhonecall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+916350078291"));
+                startActivity(intent);
+                dialog.cancel();
+            }
+        });
+        crossbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+            }
+        });
+        dialog.show();
+    }
+    public static void openCustomTab(Activity activity, CustomTabsIntent customTabsIntent, Uri uri) {
+        // package name is the default package
+        // for our custom chrome tab
+        String packageName = "com.android.chrome";
+        if (packageName != null) {
 
+            // we are checking if the package name is not null
+            // if package name is not null then we are calling
+            // that custom chrome tab with intent by passing its
+            // package name.
+            customTabsIntent.intent.setPackage(packageName);
 
+            // in that custom tab intent we are passing
+            // our url which we have to browse.
+            customTabsIntent.launchUrl(activity, uri);
+        } else {
+            // if the custom tabs fails to load then we are simply
+            // redirecting our user to users device default browser.
+            activity.startActivity(new Intent(Intent.ACTION_VIEW, uri));
+        }
+    }
 }

@@ -3,23 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/action_bar.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/activity_additional_information.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/activity_demo2.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/activity_edit_business.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/activity_tutorials.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/bottom_items.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/faq_row.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/fragment_account.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/fragment_manage.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/plan_up.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android Project/webzon/app/src/main/res/layout/tuto_row.xml" value="0.36666666666666664" />
-=======
         <entry key="..\:/webzon/app/src/main/res/drawable-xxhdpi/bottomdilogbox.xml" value="0.28" />
+        <entry key="..\:/webzon/app/src/main/res/drawable-xxhdpi/litepremimumround.xml" value="0.28" />
+        <entry key="..\:/webzon/app/src/main/res/drawable/bg_otp_box_active.xml" value="0.22870370370370371" />
         <entry key="..\:/webzon/app/src/main/res/drawable/bottomdilog.xml" value="0.284375" />
         <entry key="..\:/webzon/app/src/main/res/drawable/bottomdilog1.xml" value="0.284375" />
+        <entry key="..\:/webzon/app/src/main/res/drawable/edittextround.xml" value="0.22870370370370371" />
+        <entry key="..\:/webzon/app/src/main/res/drawable/white_border.xml" value="0.22870370370370371" />
+        <entry key="..\:/webzon/app/src/main/res/drawable/white_rounded_corner.xml" value="0.22870370370370371" />
+        <entry key="..\:/webzon/app/src/main/res/drawable/white_rounded_corner1.xml" value="0.22870370370370371" />
         <entry key="..\:/webzon/app/src/main/res/layout/activity_add_product.xml" value="0.1933876811594203" />
+        <entry key="..\:/webzon/app/src/main/res/layout/activity_webzon_plan.xml" value="0.2682291666666667" />
         <entry key="..\:/webzon/app/src/main/res/layout/activity_webzonpc.xml" value="0.2682291666666667" />
         <entry key="..\:/webzon/app/src/main/res/layout/bottom_items.xml" value="0.25" />
         <entry key="..\:/webzon/app/src/main/res/layout/button_custom.xml" value="0.1933876811594203" />
@@ -28,8 +22,9 @@
         <entry key="..\:/webzon/app/src/main/res/layout/category_row.xml" value="0.1933876811594203" />
         <entry key="..\:/webzon/app/src/main/res/layout/fragment_account.xml" value="0.2682291666666667" />
         <entry key="..\:/webzon/app/src/main/res/layout/plan_up.xml" value="0.1933876811594203" />
+        <entry key="..\:/webzon/app/src/main/res/layout/supportitems.xml" value="0.2682291666666667" />
         <entry key="..\:/webzon/app/src/main/res/layout/webzonpcitems.xml" value="0.2682291666666667" />
->>>>>>> 39011030e1fd03af524ca52d36ebd0e9fd2d312d
+        <entry key="..\:/webzon/app/src/main/res/layout/webzonplanitems.xml" value="0.2682291666666667" />
       </map>
     </option>
   </component>

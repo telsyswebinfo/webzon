@@ -12,11 +12,12 @@
         android:layout_marginBottom="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_5sdp"
         >
+
         <ImageView
             android:id="@+id/img_cat7"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/right_img"/>
+            android:background="@drawable/right_img" />
         <TextView
             android:id="@+id/tvtitle"
             android:layout_width="match_parent"
