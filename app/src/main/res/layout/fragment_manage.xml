@@ -335,7 +335,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:visibility="invisible"
+                    android:id="@+id/li_taxes"
                     android:paddingLeft="@dimen/_10sdp"
                     android:gravity="center"
                     android:layout_margin="@dimen/_5sdp"
@@ -348,7 +348,7 @@
                     <ImageView
                         android:layout_width="@dimen/_40sdp"
                         android:layout_height="@dimen/_40sdp"
-                        android:background="@drawable/delivery"/>
+                        android:background="@drawable/taxes_icon"/>
 
                     <TextView
                         android:textSize="@dimen/_13sdp"
@@ -357,7 +357,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dukan Delivery"/>
+                        android:text="Taxes"/>
 
                 </LinearLayout>
 

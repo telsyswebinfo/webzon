@@ -28,7 +28,7 @@ public class ManageFragment extends Fragment {
     private String mParam2;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    LinearLayout li_marketings,li_ds,li_qr_code,li_extra_charges,li_mc,li_dukan_delivery,li_du_maarketing,li_onlinepayment,li_orderform;
+    LinearLayout li_marketings,li_ds,li_qr_code,li_extra_charges,li_mc,li_dukan_delivery,li_du_maarketing,li_onlinepayment,li_orderform,li_taxes;
 
     public static ManageFragment newInstance(String param1, String param2) {
         ManageFragment fragment = new ManageFragment();
@@ -57,6 +57,7 @@ public class ManageFragment extends Fragment {
         li_dukan_delivery =view.findViewById(R.id.li_dukan_delivery);
         li_du_maarketing =view.findViewById(R.id.li_du_maarketing);
         li_onlinepayment =view.findViewById(R.id.li_onlinepayment);
+        li_taxes =view.findViewById(R.id.li_taxes);
         li_orderform =view.findViewById(R.id.li_orderform);
         li_marketings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +115,13 @@ public class ManageFragment extends Fragment {
         });
 
         li_orderform.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), OrderFormActivity.class));
+            }
+        });
+
+        li_taxes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), OrderFormActivity.class));

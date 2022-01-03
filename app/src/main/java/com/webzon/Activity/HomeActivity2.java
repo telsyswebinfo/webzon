@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.bumptech.glide.Glide;
 import com.fxn.BubbleTabBar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.webzon.Activity.Login.EnterOTPActivity;
 import com.webzon.Adapter.AdapterViewPager;
 import com.webzon.Fragment.AccountFragment;
 import com.webzon.Fragment.HomeFragment;
@@ -99,7 +101,12 @@ public class HomeActivity2  extends CustomActivity {
 
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
         //bottomdilog();
-       // bottomdilogbox();
+        try{
+            if(!sessionManager.getPreferences(HomeActivity2.this, "trial").equals("1")){
+                bottomdilogbox();
+            }
+        }catch (Exception E){}
+
     }
 
     @SuppressLint("WrongConstant")
@@ -147,20 +154,32 @@ public class HomeActivity2  extends CustomActivity {
     }
 
     private void bottomdilogbox() {
-
+        Button btn_continue;
+        TextView txt_continue;
         View view = getLayoutInflater().inflate(R.layout.bottom_items, null);
         BottomSheetDialog dialog = new BottomSheetDialog(this,R.style.BottomSheetDialog); // Style here
         dialog.setContentView(view);
         dialog.setCancelable(false);
         dialog.show();
 
-       /* btn_continue =findViewById(R.id.btn_continue);
+        txt_continue =view.findViewById(R.id.txt_continue);
+        btn_continue =view.findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.cancel();
+                sessionManager.setPreferences(HomeActivity2.this, "trial", "1");
             }
-        });*/
+        });
+
+        txt_continue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+                sessionManager.setPreferences(HomeActivity2.this, "trial", "1");
+                bottomdilog();
+            }
+        });
 
 
     }
