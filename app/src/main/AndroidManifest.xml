@@ -44,6 +44,9 @@
         android:theme="@style/Theme.Webzon"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Activity.Manage.GSTTaxesActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.WebzonPlanActivity"
             android:exported="false" />
         <activity

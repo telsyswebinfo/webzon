@@ -11,6 +11,29 @@
         android:background="@drawable/bottomdilog"
         android:orientation="vertical">
         <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select tax type"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/close_icon"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,9 +41,11 @@
 
 
             <RelativeLayout
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
                 android:padding="@dimen/_10sdp"
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/ic_search_black_24dp">
 
                 <Spinner
@@ -28,7 +53,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
-                    android:entries="@array/array_name"
+                    android:entries="@array/tax_type"
                     android:minHeight="0dp"
                     android:textSize="16sp" />
                 <ImageView
@@ -40,10 +65,7 @@
             </RelativeLayout>
 
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey"/>
+
         <LinearLayout
             android:layout_marginBottom="@dimen/_10sdp"
             android:layout_marginTop="10dp"
@@ -54,7 +76,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/btn_continue"
+                android:id="@+id/btn_submit"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:textSize="16dp"

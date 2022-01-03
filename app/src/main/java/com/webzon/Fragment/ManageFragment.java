@@ -13,12 +13,14 @@ import com.webzon.Activity.Manage.DiscountCouponsActivity;
 import com.webzon.Activity.Manage.DukaanMarketingActivity;
 import com.webzon.Activity.Manage.DukanDeliveryActivity;
 import com.webzon.Activity.Manage.ExtraChargesActivity;
+import com.webzon.Activity.Manage.GSTTaxesActivity;
 import com.webzon.Activity.Manage.MarketingsActivity;
 import com.webzon.Activity.Manage.MyCustomersActivity;
 import com.webzon.Activity.Manage.OnlinePaymentActivity;
 import com.webzon.Activity.Manage.OrderFormActivity;
 import com.webzon.Activity.Manage.QRCodeActivity;
 
+import com.webzon.Activity.Manage.TaxesActivity;
 import com.webzon.R;
 
 
@@ -28,7 +30,7 @@ public class ManageFragment extends Fragment {
     private String mParam2;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    LinearLayout li_marketings,li_ds,li_qr_code,li_extra_charges,li_mc,li_dukan_delivery,li_du_maarketing,li_onlinepayment,li_orderform,li_taxes;
+    LinearLayout li_marketings,li_ds,li_qr_code,li_extra_charges,li_mc,li_dukan_delivery,li_du_maarketing,li_onlinepayment,li_orderform,li_taxes,li_gst;
 
     public static ManageFragment newInstance(String param1, String param2) {
         ManageFragment fragment = new ManageFragment();
@@ -58,6 +60,7 @@ public class ManageFragment extends Fragment {
         li_du_maarketing =view.findViewById(R.id.li_du_maarketing);
         li_onlinepayment =view.findViewById(R.id.li_onlinepayment);
         li_taxes =view.findViewById(R.id.li_taxes);
+        li_gst =view.findViewById(R.id.li_gst);
         li_orderform =view.findViewById(R.id.li_orderform);
         li_marketings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,7 +127,14 @@ public class ManageFragment extends Fragment {
         li_taxes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), OrderFormActivity.class));
+                startActivity(new Intent(getActivity(), TaxesActivity.class));
+            }
+        });
+
+        li_gst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), GSTTaxesActivity.class));
             }
         });
 
