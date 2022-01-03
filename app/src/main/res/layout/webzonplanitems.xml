@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="1"
+         android:gravity="center"
+         android:layout_marginLeft="@dimen/_10sdp"
+         android:layout_marginRight="@dimen/_10sdp"
+         android:layout_marginTop="@dimen/_5sdp"
+         android:layout_marginBottom="@dimen/_5sdp"
+         android:orientation="horizontal">
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_weight=".60"
+             android:gravity="center"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <TextView
+                 android:id="@+id/tvtitle"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Online Store"
+                 android:textColor="@android:color/black"
+                 android:textSize="15sp" />
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Add products, categories \npayments &amp; more"
+                 android:layout_below="@id/tvtitle"
+                 android:textSize="13sp" />
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/linearLite"
+             android:layout_width="0dp"
+             android:layout_weight=".20"
+             android:gravity="center"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+             <ImageView
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:background="@drawable/ic_baseline_check_24"/>
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/linearPremium"
+             android:layout_width="0dp"
+             android:layout_weight=".20"
+             android:gravity="center"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+             <ImageView
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:background="@drawable/ic_baseline_check_24"/>
+         </LinearLayout>
+
+     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"/>
+</LinearLayout>

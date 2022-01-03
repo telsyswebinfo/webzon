@@ -17,6 +17,7 @@
 
     <color name="color_item_bg">#6086a3</color>
     <color name="color_view_bg">#1e6390</color>
+    <color name="color_premimum_bg">#e7f0f7</color>
     <color name="color_view_btn">#1fbaf3</color>
 
 
@@ -34,6 +35,7 @@
     <color name="dr">#905eb8</color>
 
     <color name="grey">#a9a9a9</color>
+    <color name="bg_grey">#fafafa</color>
 
 
     <color name="colorAccent">#5c06a8</color>
