@@ -44,6 +44,12 @@
         android:theme="@style/Theme.Webzon"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Activity.Manage.TaxesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.InvoiceActivity"
+            android:exported="false" />
+        <activity
             android:name=".Demo2Activity"
             android:exported="false" />
 
@@ -388,20 +394,16 @@
         <!- <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>-->
-    </activity>
-
-    <activity
-        android:name="com.webzon.Yplayer.FullScreenLessonPlayerActivity"
-        android:exported="false"
-        android:configChanges="keyboardHidden|orientation|screenSize" />
-    <activity
-        android:name="com.webzon.Activity.WebzonpcActivity"
-        android:exported="false"
-
-        />
-
-</application>
+        </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Yplayer.FullScreenLessonPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WebzonpcActivity"
+            android:exported="false" />
+    </application>
 
 </manifest>
-
