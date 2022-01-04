@@ -80,6 +80,11 @@ On the other hand, we denounce with righteous indignation and dislike men who ar
         <item>ITR Return</item>
         <item>GST Registration</item>
     </string-array>
+
+    <string-array name="tax_year">
+        <item>2020 - 2021 (1st April 2020 to 31st March 2021)</item>
+    </string-array>
+
     <string name="title_activity_main3">Main3Activity</string>
     <string name="title_activity_demo">Demo</string>
     <string name="title_activity_bottom">BottomActivity</string>

@@ -25,6 +25,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -282,4 +285,43 @@ public class Utils {
         return (todayDate.getTime().getTime() - messageDate.getTime().getTime());
     }
 
+
+    public static boolean isPanCardValid(String pan_number) {
+
+        Pattern pattern = Pattern.compile("[A-Z]{5}[0-9]{4}[A-Z]{1}");
+
+        Matcher matcher = pattern.matcher(pan_number);
+        // Check if pattern matches
+        if (matcher.matches()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public static boolean validateAadharNumber(String aadharNumber){
+        Pattern aadharPattern = Pattern.compile("\\d{12}");
+        boolean isValidAadhar = aadharPattern.matcher(aadharNumber).matches();
+        if(isValidAadhar){
+            isValidAadhar =VerhoeffAlgorithm.validateVerhoeff(aadharNumber);
+        }
+        return isValidAadhar;
+    }
+
+    public static boolean validateGST(String gst){
+        if(gst!=null){
+            return Pattern.matches("^[0-9]{2}[A-Z]{5}[0-9]{4}"
+                    + "[A-Z]{1}[1-9A-Z]{1}"
+                    + "Z[0-9A-Z]{1}$",gst);
+        } else
+            return false;
+    }
+
+    public static boolean isValidMobile(String phone) {
+        String regEx = "^[0-9]{10,10}$";
+        return phone.matches(regEx);
+    }
+
+    public static boolean isValidMail(String email) {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
 }

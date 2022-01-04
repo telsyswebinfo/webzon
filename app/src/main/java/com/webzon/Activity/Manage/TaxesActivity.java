@@ -2,6 +2,7 @@ package com.webzon.Activity.Manage;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +30,7 @@ public class TaxesActivity extends CustomActivity {
         btn_create_tax.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // bottomdilogbox();
+                startActivity(new Intent(TaxesActivity.this, RequestForTaxActivity.class));
             }
         });
 
