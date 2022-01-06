@@ -19,7 +19,7 @@
             android:orientation="vertical">
             /////////////////////Layout1/////////////////////////////
             <LinearLayout
-                android:visibility="gone"
+                android:visibility="visible"
                 android:id="@+id/li_pan_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,8 +72,8 @@
                             android:imeOptions="actionNext"
                             android:maxLines="1"
                              android:maxLength="10"
-                            android:textAllCaps="true"
                             android:singleLine="true"
+                            android:inputType="textCapCharacters"
                             android:id="@+id/txt_pannumber"
                             android:layout_width="match_parent"
                             android:hint="PAN Number"
@@ -92,6 +92,7 @@
                             android:maxLines="1"
                             android:singleLine="true"
                             android:id="@+id/txt_adhar"
+                            android:inputType="number"
                             android:layout_width="match_parent"
                             android:hint="Aadhar Card Number"
                             android:layout_height="wrap_content" />
@@ -102,7 +103,7 @@
             </LinearLayout>
             /////////////////////Layout2/////////////////////////////
             <LinearLayout
-                android:visibility="visible"
+                android:visibility="gone"
                 android:id="@+id/li_kyc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -124,7 +125,6 @@
                     android:orientation="horizontal">
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
-                        app:prefixText="\u20B9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -134,10 +134,10 @@
                             android:imeOptions="actionNext"
                             android:maxLines="1"
                             android:singleLine="true"
+                            android:inputType="textCapSentences"
                             android:id="@+id/txt_fname"
                             android:layout_width="match_parent"
                             android:hint="First Name"
-                            android:inputType="text"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,7 +145,6 @@
                         android:layout_weight="1"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        app:prefixText="\u20B9"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
@@ -168,7 +167,6 @@
                     android:orientation="horizontal">
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
-                        app:prefixText="\u20B9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -181,7 +179,7 @@
                             android:layout_width="match_parent"
                             android:hint="Last Name"
                             android:id="@+id/txt_lname"
-                            android:inputType="text"
+                            android:inputType="textCapSentences"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -189,7 +187,6 @@
                         android:layout_weight="1"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        app:prefixText="\u20B9"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
@@ -200,36 +197,39 @@
                             android:layout_width="match_parent"
                             android:hint="Father's Name"
                             android:id="@+id/txt_frname"
-                            android:inputType="number"
+                            android:inputType="textCapSentences"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txt_dob"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Date Of Birth"
-                        android:longClickable="false"
-                        android:singleLine="true"
-                        android:imeOptions="actionDone" />
-                </com.google.android.material.textfield.TextInputLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Date Of Birth"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:inputType="none"
+                            android:longClickable="false"
+                            android:imeOptions="actionDone" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
-                        app:prefixText="\u20B9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -247,11 +247,19 @@
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        app:prefixText="\u20B9"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
@@ -266,16 +274,8 @@
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
-                        app:prefixText="\u20B9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -285,25 +285,7 @@
                             android:imeOptions="actionNext"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:layout_width="match_parent"
-                            android:hint="Gender"
-                            android:inputType="text"
-                            android:layout_height="wrap_content" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_weight="1"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        app:prefixText="\u20B9"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:imeOptions="actionNext"
-                            android:maxLines="1"
-                            android:singleLine="true"
-                            android:id="@+id/txt_gender"
+                            android:id="@+id/txt_rfn"
                             android:layout_width="match_parent"
                             android:hint="Enter Refferrence No."
                             android:inputType="number"
@@ -317,9 +299,135 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                         <TextView
+                             android:textColor="@color/black"
+                             android:textSize="@dimen/_14sdp"
+                             android:paddingLeft="@dimen/_12sdp"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Gender"/>
+                        <RelativeLayout
+
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@drawable/ic_search_black_24dp">
+
+                            <Spinner
+                                android:id="@+id/sp_gender"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:entries="@array/gender"
+                                android:minHeight="0dp"
+                                android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/arrow_down"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:paddingLeft="@dimen/_12sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Employer Category"/>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@drawable/ic_search_black_24dp">
+
+                            <Spinner
+                                android:id="@+id/sp_empCategory"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:entries="@array/cate"
+                                android:minHeight="0dp"
+                                android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/arrow_down"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/li_btype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:paddingLeft="@dimen/_12sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Business Category"/>
+                        <RelativeLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@drawable/ic_search_black_24dp">
+
+                            <Spinner
+                                android:id="@+id/sp_bCate"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:entries="@array/bType"
+                                android:minHeight="0dp"
+                                android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/arrow_down"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
-                        app:prefixText="\u20B9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -331,7 +439,7 @@
                             android:singleLine="true"
                             android:layout_width="match_parent"
                             android:hint="Flat Number"
-                            android:inputType="text"
+                            android:inputType="textCapSentences"
                             android:id="@+id/txt_fnumber"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -340,7 +448,6 @@
                         android:layout_weight="1"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        app:prefixText="\u20B9"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
@@ -350,7 +457,7 @@
                             android:singleLine="true"
                             android:layout_width="match_parent"
                             android:hint="Village"
-                            android:inputType="number"
+                            android:inputType="textCapSentences"
                             android:id="@+id/txt_village"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -363,7 +470,6 @@
                     android:orientation="horizontal">
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
-                        app:prefixText="\u20B9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -376,7 +482,7 @@
                             android:layout_width="match_parent"
                             android:hint="Area"
                             android:id="@+id/txt_area"
-                            android:inputType="text"
+                            android:inputType="textCapSentences"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -384,7 +490,6 @@
                         android:layout_weight="1"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        app:prefixText="\u20B9"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
@@ -407,7 +512,6 @@
                     android:orientation="horizontal">
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
-                        app:prefixText="\u20B9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -420,7 +524,7 @@
                             android:layout_width="match_parent"
                             android:hint="City"
                             android:id="@+id/txt_city"
-                            android:inputType="text"
+                            android:inputType="textCapSentences"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -428,7 +532,6 @@
                         android:layout_weight="1"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        app:prefixText="\u20B9"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
@@ -439,7 +542,7 @@
                             android:layout_width="match_parent"
                             android:hint="State"
                             android:id="@+id/txt_state"
-                            android:inputType="text"
+                            android:inputType="textCapSentences"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -450,7 +553,6 @@
                     android:orientation="horizontal">
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
-                        app:prefixText="\u20B9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -462,17 +564,17 @@
                             android:singleLine="true"
                             android:layout_width="match_parent"
                             android:hint="Pincode"
-
                             android:id="@+id/txt_pincode"
-                            android:inputType="text"
+                            android:inputType="number"
+                            android:maxLength="6"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_weight="1"
+                        android:visibility="invisible"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        app:prefixText="\u20B9"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
@@ -481,9 +583,9 @@
                             android:maxLines="1"
                             android:singleLine="true"
                             android:layout_width="match_parent"
-                            android:hint="Employer Category"
-                             android:id="@+id/txt_ecategory"
+                            android:hint="Pincode"
                             android:inputType="number"
+                            android:maxLength="6"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -518,7 +620,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Name of the Bank"
+                        android:id="@+id/txt_bname"
                         android:singleLine="true"
+                        android:inputType="textCapSentences"
                         android:imeOptions="actionDone" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -532,6 +636,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Customer Name"
+                        android:id="@+id/txt_cname"
+                        android:inputType="textCapCharacters"
                         android:singleLine="true"
                         android:imeOptions="actionDone" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -547,6 +653,7 @@
                         android:layout_height="wrap_content"
                         android:hint="Account Number"
                         android:singleLine="true"
+                        android:id="@+id/txt_anumber"
                         android:inputType="number"
                         android:imeOptions="actionDone" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -563,6 +670,7 @@
                         android:layout_height="wrap_content"
                         android:hint="Confirm Account Number"
                         android:singleLine="true"
+                        android:id="@+id/txt_CAnumber"
                         android:inputType="number"
                         android:imeOptions="actionDone" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -579,7 +687,8 @@
                         android:layout_height="wrap_content"
                         android:hint="IFSC Code of Bank"
                         android:singleLine="true"
-                        android:inputType="number"
+                        android:id="@+id/txt_ifsc"
+                        android:inputType="textCapCharacters"
                         android:imeOptions="actionDone" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -594,25 +703,41 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Branch"
+                        android:id="@+id/txt_branch"
                         android:singleLine="true"
-                        android:inputType="number"
+                        android:inputType="textCapCharacters"
                         android:imeOptions="actionDone" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp">
+                    android:text="Account Type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:paddingLeft="@dimen/_14sdp"/>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@drawable/ic_search_black_24dp">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Account Type"
-                        android:singleLine="true"
-                        android:inputType="number"
-                        android:imeOptions="actionDone" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    <Spinner
+                        android:id="@+id/sp_acType"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:entries="@array/type"
+                        android:minHeight="0dp"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/arrow_down"/>
+                </RelativeLayout>
 
 
 
@@ -630,7 +755,7 @@
                     android:layout_weight="1">
 
                     <ImageView
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:id="@+id/img_add"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
@@ -658,6 +783,18 @@
                     android:textSize="@dimen/_10sdp"
                     android:textColor="@android:color/white"
                     android:background="@drawable/roundedbutton"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:id="@+id/submit"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text="Submit"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/roundedbutton"/>
+
 
 
             </LinearLayout>

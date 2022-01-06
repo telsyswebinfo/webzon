@@ -1,46 +1,38 @@
 package com.webzon.Model;
 
 public class ModelBankDetails {
-    String b_name,c_name,a_number,confirm_a_nmuber,ifsc,branch,a_type;
+    String bank_name,customer_name,account_number,ifsc_code,branch,account_type;
 
-    public String getB_name() {
-        return b_name;
+    public String getBank_name() {
+        return bank_name;
     }
 
-    public void setB_name(String b_name) {
-        this.b_name = b_name;
+    public void setBank_name(String bank_name) {
+        this.bank_name = bank_name;
     }
 
-    public String getC_name() {
-        return c_name;
+    public String getCustomer_name() {
+        return customer_name;
     }
 
-    public void setC_name(String c_name) {
-        this.c_name = c_name;
+    public void setCustomer_name(String customer_name) {
+        this.customer_name = customer_name;
     }
 
-    public String getA_number() {
-        return a_number;
+    public String getAccount_number() {
+        return account_number;
     }
 
-    public void setA_number(String a_number) {
-        this.a_number = a_number;
+    public void setAccount_number(String account_number) {
+        this.account_number = account_number;
     }
 
-    public String getConfirm_a_nmuber() {
-        return confirm_a_nmuber;
+    public String getIfsc_code() {
+        return ifsc_code;
     }
 
-    public void setConfirm_a_nmuber(String confirm_a_nmuber) {
-        this.confirm_a_nmuber = confirm_a_nmuber;
-    }
-
-    public String getIfsc() {
-        return ifsc;
-    }
-
-    public void setIfsc(String ifsc) {
-        this.ifsc = ifsc;
+    public void setIfsc_code(String ifsc_code) {
+        this.ifsc_code = ifsc_code;
     }
 
     public String getBranch() {
@@ -51,11 +43,11 @@ public class ModelBankDetails {
         this.branch = branch;
     }
 
-    public String getA_type() {
-        return a_type;
+    public String getAccount_type() {
+        return account_type;
     }
 
-    public void setA_type(String a_type) {
-        this.a_type = a_type;
+    public void setAccount_type(String account_type) {
+        this.account_type = account_type;
     }
 }

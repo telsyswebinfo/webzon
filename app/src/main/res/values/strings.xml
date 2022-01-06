@@ -84,7 +84,38 @@ On the other hand, we denounce with righteous indignation and dislike men who ar
     <string-array name="tax_year">
         <item>2020 - 2021 (1st April 2020 to 31st March 2021)</item>
     </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="cate">
+        <item>Government</item>
+        <item>Public Sector Unit</item>
+        <item>Business</item>
+        <item>Others</item>
+        <item>Not Applicate</item>
+    </string-array>
+    <string-array name="type">
+        <item>saving</item>
+        <item>current</item>
+    </string-array>
+    <string-array name="bType">
+        <item>CSC Centre</item>
+        <item>Bank BC</item>
+        <item>Online Centre</item>
+        <item>Emitra</item>
+        <item>Cyber Cafe</item>
+        <item>IT Company</item>
+        <item>Other</item>
+    </string-array>
 
+    <string-array name="gst_type">
+        <item>Proprietorship</item>
+        <item>PartnerShip</item>
+        <item>HUF</item>
+        <item>PVT LTD</item>
+        <item>Other</item>
+    </string-array>
     <string name="title_activity_main3">Main3Activity</string>
     <string name="title_activity_demo">Demo</string>
     <string name="title_activity_bottom">BottomActivity</string>

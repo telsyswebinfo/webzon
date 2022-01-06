@@ -25,7 +25,7 @@ public class GSTTaxesActivity extends CustomActivity {
         btn_create_tax.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GSTTaxesActivity.this, RequestForTaxActivity.class));
+                startActivity(new Intent(GSTTaxesActivity.this, RequestGSTActivity.class));
             }
         });
     }

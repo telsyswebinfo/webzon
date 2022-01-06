@@ -17,4 +17,6 @@ public class ServicesUtils {
     public static String CreateExtraCharge = BaseUrl+"api/createExtraCharge";
     public static String shippingList = BaseUrl+"api/shippingList";
     public static String tutorialsList = BaseUrl+"api/tutorialsList";
+    public static String itrFill = BaseUrl+"api/itrFill";
+    public static String itrList = BaseUrl+"api/itrList";
 }

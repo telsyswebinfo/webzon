@@ -12,92 +12,67 @@
         android:orientation="vertical">
         <include layout="@layout/action_bar"/>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="1">
+            android:gravity="center">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rev_itr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_50sdp" />
 
             <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lay_nodata"
+                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".9"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:visibility="gone"
-                    android:id="@+id/li_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_no_data_found"/>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_180sdp"
-                        android:background="@drawable/img_discount_co"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_marginTop="@dimen/_10sdp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Get more sales with coupons"
-                            android:textSize="@dimen/_16sdp"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_marginTop="@dimen/_10sdp">
-
-                        <TextView
-                            android:layout_margin="10dp"
-                            android:gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-                            android:textSize="@dimen/_12sdp"
-                            android:textColor="@color/black"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rec_coupan"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_margin="16dp"
-                android:gravity="center|bottom"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".1">
-
-                <Button
-                    android:id="@+id/btn_create_tax"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                <TextView
+                    android:id="@+id/tv_no_data"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/btn_bg_visit_s"
-                    android:text="Request ITR Online"
-                    android:textSize="14dp" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opps no data available"
+                    android:textSize="12sp"/>
 
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/li_btn_create_tax"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginEnd="110dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cod_bg"
+                android:gravity="bottom"
+                android:padding="@dimen/_5sdp">
 
-        </LinearLayout>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request ITR Online"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
 
 
     </LinearLayout>

@@ -45,6 +45,9 @@
         android:theme="@style/Theme.Webzon"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Activity.Manage.RequestGSTActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.Manage.RequestForTaxActivity"
             android:exported="false" />
         <activity
@@ -55,9 +58,6 @@
             android:exported="false" />
         <activity
             android:name=".Activity.Manage.TaxesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.InvoiceActivity"
             android:exported="false" />
         <activity
             android:name=".Demo2Activity"
@@ -93,6 +93,11 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateVisible|adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activity.InvoiceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activity.Manage.ExtraChargesActivity"
@@ -414,6 +419,28 @@
         <activity
             android:name=".Activity.WebzonpcActivity"
             android:exported="false" />
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
